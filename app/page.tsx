@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <main className="max-w-2xl mx-auto p-6 space-y-8">
       {/* Header */}
-      <div className="flex space-x-4 items-center justify-center mb-8">
+      <div className="flex space-x-4 items-center mb-8">
         <Avatar className="h-20 w-20">
           <AvatarImage src="/profile-2.jpg" alt="Ahmed Secen profile picture" />
           <AvatarFallback>AS</AvatarFallback>
@@ -34,7 +34,7 @@ export default function Home() {
       </div>
 
       {/* Summary */}
-      <div className="text-center space-y-2">
+      <div className="text-left space-y-2">
         <h2 className="text-lg font-semibold">Engineering Student, Freelance CAD Designer</h2>
         <p className="text-sm text-muted-foreground leading-relaxed">
           I'm a motivated mechanical engineering student and community leader. I have experience in hardware design, 
