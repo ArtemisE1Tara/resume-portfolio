@@ -102,7 +102,7 @@ export default function Home() {
                 <h4 className="text-lg font-medium">HotSeat</h4>
                 <div className="text-sm text-muted-foreground space-y-1">
                   <p><strong>Team:</strong> OKAA Solutions (Kelly Fulk, Olivia Hart, Ahmed Secen, Abram Weller)</p>
-                  <p><strong>Date:</strong> April 2025</p>
+                  <p><strong>Date:</strong> August 2024 - May 2025</p>
                 </div>
               </div>
 
