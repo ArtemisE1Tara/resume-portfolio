@@ -4,6 +4,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Separator } from "@/components/ui/separator";
 import { GitHubLogoIcon, LinkedInLogoIcon } from "@radix-ui/react-icons";
 import { useState } from "react";
+import { Button } from "@/components/ui/button";
 
 
 export default function Home() {
@@ -21,7 +22,6 @@ export default function Home() {
         <div className="space-y-1">
           <h1 className="text-2xl font-semibold">Ahmed Secen</h1>
           <p className="text-lg text-muted-foreground">University of Cincinnati</p>
-          <p className="text-sm text-muted-foreground">Mechanical Engineering, Bachelor of Science</p>
           <div className="flex items-center space-x-2 pt-1">
             <a href="https://github.com/ArtemisE1Tara" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground">
               <GitHubLogoIcon className="h-5 w-5" />
@@ -44,14 +44,26 @@ export default function Home() {
 
       <Separator />
 
-      {/* Key Competencies */}
+      {/* Skills */}
       <div className="space-y-2">
-        <h3 className="text-lg font-semibold">Key Competencies</h3>
+        <h3 className="text-lg font-semibold">Skills</h3>
         <div className="text-sm text-muted-foreground space-y-1">
+          <p><span style={{fontWeight: 'bold'}}>• Web Technologies:</span> NextJS, Convex, TypeScript, Prisma</p>
+          <p><span style={{fontWeight: 'bold'}}>• CAD Design:</span> Fusion 360, Solidworks, AutoCAD</p>
+          <p><span style={{fontWeight: 'bold'}}>• 3D Modeling:</span> Blender, Revit, SketchUp</p>
           <p>• Project management & technical writing</p>
-          <p>• Critical thinking & problem solving</p>
-          <p>• Strong communication & interpersonal skills</p>
-          <p>• Self-motivated & organized</p>
+        </div>
+      </div>
+
+      <Separator />
+
+      {/* Education */}
+      <div className="space-y-2">
+        <h3 className="text-lg font-semibold">Education</h3>
+        <div className="text-sm text-muted-foreground space-y-1">
+          <p><span style={{fontWeight: 'bold'}}>• University:</span> University of Cincinnati</p>
+          <p><span style={{fontWeight: 'bold'}}>• Degree:</span> Mechanical Engineering, Bachelor of Science (BS)</p>
+          <p><span style={{fontWeight: 'bold'}}>• Expected Graduation:</span> May 2030</p>
         </div>
       </div>
 
@@ -78,6 +90,24 @@ export default function Home() {
               <p className="text-sm text-muted-foreground">{job.desc}</p>
             </div>
           ))}
+        </div>
+      </div>
+
+      <Separator />
+
+      {/* Contact */}
+      <div className="space-y-2">
+        <h3 className="text-lg font-semibold">Contact</h3>
+        <div className="flex space-x-3">
+          <Button asChild style={{backgroundColor: 'white'}}>
+            <a href="mailto:ahmedsecen2@gmail.com" target="_blank">Email</a>
+          </Button>
+          <Button asChild style={{backgroundColor: 'white'}}>
+            <a href="https://www.linkedin.com/in/ahmed-secen-b3ab4a234/" target="_blank">LinkedIn</a>
+          </Button>
+          <Button asChild style={{backgroundColor: 'white'}}>
+            <a href="https://github.com/ArtemisE1Tara" target="_blank">GitHub</a>
+          </Button>
         </div>
       </div>
 
