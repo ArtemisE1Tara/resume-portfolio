@@ -1,5 +1,6 @@
-'use client';
+'use client'
 import Image from "next/image";
+import Link from "next/link";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Separator } from "@/components/ui/separator";
 import { GitHubLogoIcon, LinkedInLogoIcon } from "@radix-ui/react-icons";
@@ -64,6 +65,26 @@ export default function Home() {
           <p><span style={{fontWeight: 'bold'}}>• University:</span> University of Cincinnati</p>
           <p><span style={{fontWeight: 'bold'}}>• Degree:</span> Mechanical Engineering, Bachelor of Science (BS)</p>
           <p><span style={{fontWeight: 'bold'}}>• Expected Graduation:</span> May 2030</p>
+        </div>
+      </div>
+
+      <Separator />
+
+      {/* Licenses & Certifications */}
+      <div className="space-y-2">
+        <h3 className="text-lg font-semibold">Licenses & Certifications</h3>
+        <div className="text-sm text-muted-foreground space-y-1">
+          <p>
+            <span style={{fontWeight: 'bold'}}>• </span>
+            <a 
+              href="https://www.linkedin.com/learning/certificates/24269c475c07de9a28dfc2ac2ab3312ea5ec77025c848e9d699c9ff92969ca6d?u=2133849" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-foreground underline"
+            >
+              SOLIDWORKS: Advanced Engineering Drawings
+            </a>
+          </p>
         </div>
       </div>
 
