@@ -86,6 +86,19 @@ export default function Home() {
             </a>
           </p>
         </div>
+        <div className="text-sm text-muted-foreground space-y-1">
+          <p>
+            <span style={{fontWeight: 'bold'}}>• </span>
+            <a 
+              href="https://www.linkedin.com/learning/certificates/1529be885afe5ce3eba7d9a4b2a78e10eb0df837d7a249d9923851a50c5d77a8?u=2133849" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-foreground underline"
+            >
+              Fusion 360: Design for Mechatronics
+            </a>
+          </p>
+        </div>
       </div>
 
       <Separator />
