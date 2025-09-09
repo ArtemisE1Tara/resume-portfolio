@@ -38,8 +38,9 @@ export default function Home() {
       <div className="text-left space-y-2">
         <h2 className="text-lg font-semibold">Engineering Student, Freelance CAD Designer</h2>
         <p className="text-sm text-muted-foreground leading-relaxed">
-          I'm a motivated mechanical engineering student and community leader. I have experience in hardware design, 
-          software development, and project management from design to manufacturing phase.
+          I'm looking forward to pursuing a career in Mechanical Engineering and eventually starting an engineering firm. 
+          I've worked with teams on open-ended projects focused on hardware design and software development from the design to manufacturing phase. 
+          I have experience in driving community activities and being in leadership positions.
         </p>
       </div>
 
@@ -108,10 +109,10 @@ export default function Home() {
         <h3 className="text-lg font-semibold">Experience</h3>
         <div className="space-y-4">
           {[
-            { title: "Freelancer", company: "Upwork", period: "July 2025 - Present", desc: "Small to mid scale CAD models and technical drawings" },
+            { title: "CAD Designer", company: "Upwork", period: "July 2025 - Present", desc: "Design small to mid-scale 3D models and technical drawings for diverse clientele." },
             { title: "Sales Associate", company: "Kohl's", period: "July 2024 - July 2025", desc: "Streamlined Amazon return process, served customers at point of sale" },
-            { title: "Engineering Teaching Assistant", company: "Carmel High School", period: "Aug 2024 - Jan 2025", desc: "Aided students with coursework, provided guidance for engineering studies" },
-            { title: "Youth Mentor", company: "Bright Indy Youth Organization", period: "Aug 2024 - July 2025", desc: "Taught religious values and Arabic classes to elementary students" },
+            { title: "Engineering Teaching Assistant", company: "Carmel High School", period: "Aug 2024 - Jan 2025", desc: "Aided students with coursework in the Civil Engineering and Architecture class." },
+            { title: "Youth Mentor", company: "Bright Indy Youth Organization", period: "Aug 2024 - July 2025", desc: "Mentored elementary aged students in religious studies, planned and organized group outings and activities." },
           ].map((job, i) => (
             <div key={i} className="space-y-1">
               <div className="flex justify-between items-start">
