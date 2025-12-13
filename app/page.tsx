@@ -36,11 +36,11 @@ export default function Home() {
 
       {/* Summary */}
       <div className="text-left space-y-2">
-        <h2 className="text-lg font-semibold">Engineering Student, Freelance CAD Designer</h2>
+        <h2 className="text-lg font-semibold">Mechanical Engineering Student</h2>
         <p className="text-sm text-muted-foreground leading-relaxed">
-          I'm looking forward to pursuing a career in Mechanical Engineering and eventually starting an engineering firm. 
-          I've worked with teams on open-ended projects focused on hardware design and software development from the design to manufacturing phase. 
-          I have experience in driving community activities and being in leadership positions.
+          I am a first-year Mechanical Engineering student with experience in end-to-end product development. 
+          I have skills across hardware design, software development, and project management. 
+          I am interested in applying integrated system design to challenges in the civil sector and robotics.
         </p>
       </div>
 
@@ -109,7 +109,7 @@ export default function Home() {
         <h3 className="text-lg font-semibold">Experience</h3>
         <div className="space-y-4">
           {[
-            { title: "CAD Designer", company: "Upwork", period: "July 2025 - Present", desc: "Design small to mid-scale 3D models and technical drawings for diverse clientele." },
+            { title: "CAD Designer", company: "Upwork", period: "July 2025 - Sept 2025", desc: "Design small to mid-scale 3D models and technical drawings for diverse clientele." },
             { title: "Sales Associate", company: "Kohl's", period: "July 2024 - July 2025", desc: "Streamlined Amazon return process, served customers at point of sale" },
             { title: "Engineering Teaching Assistant", company: "Carmel High School", period: "Aug 2024 - Jan 2025", desc: "Aided students with coursework in the Civil Engineering and Architecture class." },
             { title: "Youth Mentor", company: "Bright Indy Youth Organization", period: "Aug 2024 - July 2025", desc: "Mentored elementary aged students in religious studies, planned and organized group outings and activities." },
@@ -138,7 +138,7 @@ export default function Home() {
             <a href="mailto:ahmedsecen2@gmail.com" target="_blank">Email</a>
           </Button>
           <Button asChild style={{backgroundColor: 'white'}}>
-            <a href="https://www.linkedin.com/in/ahmed-secen-b3ab4a234/" target="_blank">LinkedIn</a>
+            <a href="https://www.linkedin.com/in/ahmedsecen/" target="_blank">LinkedIn</a>
           </Button>
           <Button asChild style={{backgroundColor: 'white'}}>
             <a href="https://github.com/ArtemisE1Tara" target="_blank">GitHub</a>
