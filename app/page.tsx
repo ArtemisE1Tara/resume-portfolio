@@ -53,19 +53,9 @@ export default function Home() {
           <Button asChild style={{backgroundColor: 'white'}}>
             <a href="https://www.linkedin.com/in/ahmedsecen/" target="_blank">LinkedIn</a>
           </Button>
-        </div>
-      </div>
-
-      <Separator />
-
-      {/* Skills */}
-      <div className="space-y-2">
-        <h3 className="text-lg font-semibold">Skills</h3>
-        <div className="text-base text-muted-foreground space-y-1">
-          <p><span style={{fontWeight: 'bold'}}>• Programming:</span> Python, Typescript, JavaScript</p>
-          <p><span style={{fontWeight: 'bold'}}>• Tools:</span> Microsoft Office Suite</p>
-          <p><span style={{fontWeight: 'bold'}}>• 3D Modeling:</span> Solidworks, Blender, Autodesk Revit, SketchUp, Autodesk Fusion 360</p>
-          <p><span style={{fontWeight: 'bold'}}>• </span>Project management & technical writing</p>
+          <Button asChild style={{backgroundColor: 'white'}}>
+            <a href="/Resume_Ahmed_Secen_January_2026.pdf" download>Resume</a>
+          </Button>
         </div>
       </div>
 
@@ -79,7 +69,42 @@ export default function Home() {
           <p><span style={{fontWeight: 'bold'}}>• Degree:</span> Mechanical Engineering, Bachelor of Science (BS)</p>
           <p><span style={{fontWeight: 'bold'}}>• Expected Graduation:</span> May 2030</p>
           <p><span style={{fontWeight: 'bold'}}>• GPA:</span> 3.52/4.00</p>
+        </div>
+      </div>
 
+      <Separator />
+
+      {/* Awards */}
+      <div className="space-y-2">
+        <h3 className="text-lg font-semibold">Awards</h3>
+        <ul className="text-base text-muted-foreground space-y-3 list-none pl-0">
+          <li className="space-y-1">
+            <div className="flex justify-between items-start">
+              <span className="font-medium">Dean’s List</span>
+              <span>Fall 2025</span>
+            </div>
+            <p>University of Cincinnati</p>
+          </li>
+          <li className="space-y-1">
+            <div className="flex justify-between items-start">
+              <span className="font-medium">Design Competition Winner, Architectural Engineering Institute</span>
+              <span>Oct. 2025</span>
+            </div>
+            <p>University of Cincinnati</p>
+          </li>
+        </ul>
+      </div>
+
+      <Separator />
+
+      {/* Skills */}
+      <div className="space-y-2">
+        <h3 className="text-lg font-semibold">Skills</h3>
+        <div className="text-base text-muted-foreground space-y-1">
+          <p><span style={{fontWeight: 'bold'}}>• Programming:</span> Python, Typescript, JavaScript</p>
+          <p><span style={{fontWeight: 'bold'}}>• Tools:</span> Microsoft Office Suite</p>
+          <p><span style={{fontWeight: 'bold'}}>• 3D Modeling:</span> Solidworks, Blender, Autodesk Revit, SketchUp, Autodesk Fusion 360</p>
+          <p><span style={{fontWeight: 'bold'}}>• </span>Project management & technical writing</p>
         </div>
       </div>
 
