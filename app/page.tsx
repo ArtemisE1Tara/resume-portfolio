@@ -78,6 +78,8 @@ export default function Home() {
           <p><span style={{fontWeight: 'bold'}}>• University:</span> University of Cincinnati</p>
           <p><span style={{fontWeight: 'bold'}}>• Degree:</span> Mechanical Engineering, Bachelor of Science (BS)</p>
           <p><span style={{fontWeight: 'bold'}}>• Expected Graduation:</span> May 2030</p>
+          <p><span style={{fontWeight: 'bold'}}>• GPA:</span> 3.52/4.00</p>
+
         </div>
       </div>
 
