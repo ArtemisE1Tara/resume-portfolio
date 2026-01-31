@@ -6,6 +6,7 @@ import { Separator } from "@/components/ui/separator";
 import { GitHubLogoIcon, LinkedInLogoIcon } from "@radix-ui/react-icons";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
+import { Briefcase } from "lucide-react";
 
 
 export default function Home() {
@@ -23,13 +24,9 @@ export default function Home() {
         <div className="space-y-1">
           <h1 className="text-2xl font-semibold">Ahmed Secen</h1>
           <p className="text-lg text-muted-foreground">University of Cincinnati</p>
-          <div className="flex items-center space-x-2 pt-1">
-            <a href="https://github.com/ArtemisE1Tara" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground">
-              <GitHubLogoIcon className="h-5 w-5" />
-            </a>
-            <a href="https://www.linkedin.com/in/ahmed-secen-b3ab4a234/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground">
-              <LinkedInLogoIcon className="h-5 w-5" />
-            </a>
+          <div className="flex items-center space-x-2 bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-300 px-3 py-1.5 rounded-full w-fit mt-2">
+            <Briefcase className="h-4 w-4" />
+            <span className="text-sm font-medium">Open to Work - Fall 2026 Co-op</span>
           </div>
         </div>
       </div>
@@ -37,8 +34,8 @@ export default function Home() {
       {/* Summary */}
       <div className="text-left space-y-2">
         <h2 className="text-lg font-semibold">Mechanical Engineering Student</h2>
-        <p className="text-sm text-muted-foreground leading-relaxed">
-          I am a first-year Mechanical Engineering student with experience in end-to-end product development. 
+        <p className="text-base text-muted-foreground leading-relaxed">
+          Hi! I am a first-year Mechanical Engineering student with experience in end-to-end product development. 
           I have skills across hardware design, software development, and project management. 
           I am interested in applying integrated system design to challenges in the civil sector and robotics.
         </p>
@@ -46,14 +43,29 @@ export default function Home() {
 
       <Separator />
 
+      {/* Contact */}
+      <div className="space-y-2">
+        <h3 className="text-lg font-semibold">Contact</h3>
+        <div className="flex space-x-3">
+          <Button asChild style={{backgroundColor: 'white'}}>
+            <a href="mailto:ahmedsecen2@gmail.com" target="_blank">Email</a>
+          </Button>
+          <Button asChild style={{backgroundColor: 'white'}}>
+            <a href="https://www.linkedin.com/in/ahmedsecen/" target="_blank">LinkedIn</a>
+          </Button>
+        </div>
+      </div>
+
+      <Separator />
+
       {/* Skills */}
       <div className="space-y-2">
         <h3 className="text-lg font-semibold">Skills</h3>
-        <div className="text-sm text-muted-foreground space-y-1">
-          <p><span style={{fontWeight: 'bold'}}>• Web Technologies:</span> NextJS, Convex, TypeScript, Prisma</p>
-          <p><span style={{fontWeight: 'bold'}}>• CAD Design:</span> Fusion 360, Solidworks, AutoCAD</p>
-          <p><span style={{fontWeight: 'bold'}}>• 3D Modeling:</span> Blender, Revit, SketchUp</p>
-          <p>• Project management & technical writing</p>
+        <div className="text-base text-muted-foreground space-y-1">
+          <p><span style={{fontWeight: 'bold'}}>• Programming:</span> Python, Typescript, JavaScript</p>
+          <p><span style={{fontWeight: 'bold'}}>• Tools:</span> Microsoft Office Suite</p>
+          <p><span style={{fontWeight: 'bold'}}>• 3D Modeling:</span> Solidworks, Blender, Autodesk Revit, SketchUp, Autodesk Fusion 360</p>
+          <p><span style={{fontWeight: 'bold'}}>• </span>Project management & technical writing</p>
         </div>
       </div>
 
@@ -62,7 +74,7 @@ export default function Home() {
       {/* Education */}
       <div className="space-y-2">
         <h3 className="text-lg font-semibold">Education</h3>
-        <div className="text-sm text-muted-foreground space-y-1">
+        <div className="text-base text-muted-foreground space-y-1">
           <p><span style={{fontWeight: 'bold'}}>• University:</span> University of Cincinnati</p>
           <p><span style={{fontWeight: 'bold'}}>• Degree:</span> Mechanical Engineering, Bachelor of Science (BS)</p>
           <p><span style={{fontWeight: 'bold'}}>• Expected Graduation:</span> May 2030</p>
@@ -74,7 +86,7 @@ export default function Home() {
       {/* Licenses & Certifications */}
       <div className="space-y-2">
         <h3 className="text-lg font-semibold">Licenses & Certifications</h3>
-        <div className="text-sm text-muted-foreground space-y-1">
+        <div className="text-base text-muted-foreground space-y-1">
           <p>
             <span style={{fontWeight: 'bold'}}>• </span>
             <a 
@@ -87,7 +99,7 @@ export default function Home() {
             </a>
           </p>
         </div>
-        <div className="text-sm text-muted-foreground space-y-1">
+        <div className="text-base text-muted-foreground space-y-1">
           <p>
             <span style={{fontWeight: 'bold'}}>• </span>
             <a 
@@ -107,46 +119,55 @@ export default function Home() {
       {/* Experience */}
       <div className="space-y-4">
         <h3 className="text-lg font-semibold">Experience</h3>
-        <div className="space-y-4">
-          {[
-            { title: "CAD Designer", company: "Upwork", period: "July 2025 - Sept 2025", desc: "Design small to mid-scale 3D models and technical drawings for diverse clientele." },
-            { title: "Sales Associate", company: "Kohl's", period: "July 2024 - July 2025", desc: "Streamlined Amazon return process, served customers at point of sale" },
-            { title: "Engineering Teaching Assistant", company: "Carmel High School", period: "Aug 2024 - Jan 2025", desc: "Aided students with coursework in the Civil Engineering and Architecture class." },
-            { title: "Youth Mentor", company: "Bright Indy Youth Organization", period: "Aug 2024 - July 2025", desc: "Mentored elementary aged students in religious studies, planned and organized group outings and activities." },
-          ].map((job, i) => (
-            <div key={i} className="space-y-1">
-              <div className="flex justify-between items-start">
-                <div>
-                  <h4 className="font-medium">{job.title}</h4>
-                  <p className="text-sm text-muted-foreground">{job.company}</p>
-                </div>
-                {job.period && <span className="text-sm text-muted-foreground">{job.period}</span>}
+        <ul className="space-y-4 list-none pl-0">
+          {/* Beltways - Affiliated */}
+          <li className="space-y-2">
+            <div className="flex justify-between items-start">
+              <div>
+                <h4 className="font-medium">CAD Designer</h4>
+                <p className="text-base text-muted-foreground">Beltways - Affiliated</p>
               </div>
-              <p className="text-sm text-muted-foreground">{job.desc}</p>
+              <span className="text-base text-muted-foreground">October 2025 - November 2025</span>
             </div>
-          ))}
-        </div>
+            <ul className="text-base text-muted-foreground space-y-1.5 list-none pl-6">
+              <li>• Used Autodesk Fusion 360 to model a prototype wind turbine system, focusing on structural integration and load distribution.</li>
+              <li>• Designed and iterated on turbine components (blades, hub, housing) using parametric modeling, focusing on manufacturability and efficiency.</li>
+              <li>• Generated detailed part and assembly drawings with dimensions, tolerances, and annotations for fabrication and review.</li>
+            </ul>
+          </li>
+
+          {/* Kohl's */}
+          {/*}
+          <li className="space-y-2">
+            <div className="flex justify-between items-start">
+              <div>
+                <h4 className="font-medium">Sales Associate</h4>
+                <p className="text-base text-muted-foreground">Kohl's</p>
+              </div>
+              <span className="text-base text-muted-foreground">July 2024 - July 2025</span>
+            </div>
+            <ul className="text-base text-muted-foreground space-y-1.5 list-none pl-6">
+              <li>• Streamlined Amazon return process, served customers at point of sale</li>
+            </ul>
+          </li>*/}
+
+          {/* Carmel High School */}
+          <li className="space-y-2">
+            <div className="flex justify-between items-start">
+              <div>
+                <h4 className="font-medium">Engineering Teaching Assistant</h4>
+                <p className="text-base text-muted-foreground">Carmel High School</p>
+              </div>
+              <span className="text-base text-muted-foreground">Aug 2024 - Jan 2025</span>
+            </div>
+            <ul className="text-base text-muted-foreground space-y-1.5 list-none pl-6">
+              <li>• Aided students with coursework in the Civil Engineering and Architecture class.</li>
+              <li>• Instructed students in technical drafting.</li>
+              <li>• Taught students Autodesk Revit.</li>
+            </ul>
+          </li>
+        </ul>
       </div>
-
-      <Separator />
-
-      {/* Contact */}
-      <div className="space-y-2">
-        <h3 className="text-lg font-semibold">Contact</h3>
-        <div className="flex space-x-3">
-          <Button asChild style={{backgroundColor: 'white'}}>
-            <a href="mailto:ahmedsecen2@gmail.com" target="_blank">Email</a>
-          </Button>
-          <Button asChild style={{backgroundColor: 'white'}}>
-            <a href="https://www.linkedin.com/in/ahmedsecen/" target="_blank">LinkedIn</a>
-          </Button>
-          <Button asChild style={{backgroundColor: 'white'}}>
-            <a href="https://github.com/ArtemisE1Tara" target="_blank">GitHub</a>
-          </Button>
-        </div>
-      </div>
-
-      <Separator />
 
       {/* Project Portfolio */}
       <div className="space-y-4">
@@ -155,7 +176,7 @@ export default function Home() {
           className="flex items-center justify-between w-full text-left"
         >
           <h3 className="text-lg font-semibold">Project Portfolio</h3>
-          <span className="text-sm text-muted-foreground">
+          <span className="text-base text-muted-foreground">
             {isProjectsOpen ? '−' : '+'}
           </span>
         </button>
@@ -165,7 +186,7 @@ export default function Home() {
             <div className="space-y-4">
               <div className="space-y-2">
                 <h4 className="text-lg font-medium">HotSeat</h4>
-                <div className="text-sm text-muted-foreground space-y-1">
+                <div className="text-base text-muted-foreground space-y-1">
                   <p><strong>Team:</strong> OKAA Solutions (Kelly Fulk, Olivia Hart, Ahmed Secen, Abram Weller)</p>
                   <p><strong>Date:</strong> August 2024 - May 2025</p>
                 </div>
@@ -173,8 +194,8 @@ export default function Home() {
 
               <div className="space-y-3">
                 <div>
-                  <h5 className="font-medium text-sm mb-1">Problem Statement</h5>
-                  <p className="text-sm text-muted-foreground">
+                  <h5 className="font-medium text-base mb-1">Problem Statement</h5>
+                  <p className="text-base text-muted-foreground">
                     Public establishments often lack sufficient seating for all users. The Carmel Library had 1,649 daily visitors in 2023, 
                     with 73% of surveyed students having difficulty finding adequate seating. Our project solves the problem of students 
                     searching for study spaces by providing real-time occupancy data.
@@ -182,8 +203,8 @@ export default function Home() {
                 </div>
 
                 <div>
-                  <h5 className="font-medium text-sm mb-1">Solution</h5>
-                  <p className="text-sm text-muted-foreground">
+                  <h5 className="font-medium text-base mb-1">Solution</h5>
+                  <p className="text-base text-muted-foreground">
                     A discrete camera-based system that collects and displays occupancy data to help users determine optimal times 
                     to visit public spaces. The system detects up to 10 occupants from 15+ feet away with ±3 accuracy and responds 
                     to requests within one second.
@@ -191,8 +212,8 @@ export default function Home() {
                 </div>
 
                 <div>
-                  <h5 className="font-medium text-sm mb-1">Technical Highlights</h5>
-                  <div className="text-sm text-muted-foreground space-y-1">
+                  <h5 className="font-medium text-base mb-1">Technical Highlights</h5>
+                  <div className="text-base text-muted-foreground space-y-1">
                     <p>• 3D-printed PETG housing (97×67×59mm, &lt;200g)</p>
                     <p>• Raspberry Pi-powered with camera module</p>
                     <p>• Wall-mounted system designed for 3+ year lifespan</p>
@@ -202,7 +223,7 @@ export default function Home() {
                 </div>
 
                 <div className="space-y-2">
-                  <h5 className="font-medium text-sm">Project Images</h5>
+                  <h5 className="font-medium text-base">Project Images</h5>
                   <div className="grid grid-cols-2 gap-3">
                     <Image
                       src="/hot-seat.jpg"
