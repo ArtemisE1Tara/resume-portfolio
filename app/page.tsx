@@ -43,13 +43,13 @@ export default function Home() {
         <h3 className="text-lg font-semibold">Contact</h3>
         <div className="flex space-x-3">
           <Button asChild style={{backgroundColor: 'white'}}>
-            <a href="mailto:ahmedsecen2@gmail.com" target="_blank">Email</a>
+            <a href="mailto:secenah@mail.uc.edu" target="_blank">Email</a>
           </Button>
           <Button asChild style={{backgroundColor: 'white'}}>
             <a href="https://www.linkedin.com/in/ahmedsecen/" target="_blank">LinkedIn</a>
           </Button>
           <Button asChild style={{backgroundColor: 'white'}}>
-            <a href="/Resume_Ahmed_Secen_January_2026.pdf" download>Resume</a>
+            <a href="/Ahmed_Secen_Resume_Feb_2026_Updated.pdf" download>Resume</a>
           </Button>
         </div>
       </div>
