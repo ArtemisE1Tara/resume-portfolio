@@ -6,7 +6,6 @@ import { Separator } from "@/components/ui/separator";
 import { GitHubLogoIcon, LinkedInLogoIcon } from "@radix-ui/react-icons";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Briefcase } from "lucide-react";
 
 
 export default function Home() {
@@ -24,10 +23,6 @@ export default function Home() {
         <div className="space-y-1">
           <h1 className="text-2xl font-semibold">Ahmed Secen</h1>
           <p className="text-lg text-muted-foreground">University of Cincinnati</p>
-          <div className="flex items-center space-x-2 bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-300 px-3 py-1.5 rounded-full w-fit mt-2">
-            <Briefcase className="h-4 w-4" />
-            <span className="text-sm font-medium">Open to Work - Fall 2026 Co-op</span>
-          </div>
         </div>
       </div>
 
@@ -103,7 +98,7 @@ export default function Home() {
         <div className="text-base text-muted-foreground space-y-1">
           <p><span style={{fontWeight: 'bold'}}>• Programming:</span> Python, Typescript, JavaScript</p>
           <p><span style={{fontWeight: 'bold'}}>• Tools:</span> Microsoft Office Suite</p>
-          <p><span style={{fontWeight: 'bold'}}>• 3D Modeling:</span> Solidworks, Blender, Autodesk Revit, SketchUp, Autodesk Fusion 360</p>
+          <p><span style={{fontWeight: 'bold'}}>• 3D Modeling:</span> Siemens NX, Solidworks, Blender, Autodesk Revit, Autodesk Fusion 360</p>
           <p><span style={{fontWeight: 'bold'}}>• </span>Project management & technical writing</p>
         </div>
       </div>
@@ -147,6 +142,33 @@ export default function Home() {
       <div className="space-y-4">
         <h3 className="text-lg font-semibold">Experience</h3>
         <ul className="space-y-4 list-none pl-0">
+          <li className="space-y-2">
+            <div className="flex justify-between items-start">
+              <div>
+                <h4 className="font-medium">Engineering Intern (Incoming)</h4>
+                <p className="text-base text-muted-foreground">SMC</p>
+              </div>
+              <span className="text-base text-muted-foreground">Summer 2026</span>
+            </div>
+            <ul className="text-base text-muted-foreground space-y-1.5 list-none pl-6">
+              <li>• Will work on pneumatic and electric actuators.</li>
+            </ul>
+          </li>
+
+          <li className="space-y-2">
+            <div className="flex justify-between items-start">
+              <div>
+                <h4 className="font-medium">Physics Simulation Engineering Co-op (Incoming)</h4>
+                <p className="text-base text-muted-foreground">Kinetic Vision</p>
+              </div>
+              <span className="text-base text-muted-foreground">Fall 2026</span>
+            </div>
+            <ul className="text-base text-muted-foreground space-y-1.5 list-none pl-6">
+              <li>• Will work in the simulation division to simulate, test, optimize, and redesign products and processes across a spectrum of physical problems.</li>
+              <li>• Methods include Finite Element Analysis (FEA), Computational Fluid Dynamics (CFD), and Discrete Element Methods (DEM).</li>
+            </ul>
+          </li>
+
           {/* Beltways - Affiliated */}
           <li className="space-y-2">
             <div className="flex justify-between items-start">
