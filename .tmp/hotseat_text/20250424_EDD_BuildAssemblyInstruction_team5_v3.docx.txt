@@ -1,0 +1,809 @@
+ 
+
+OKAA  Solutions                                                                                                                            1  
+ 
+ 
+ 
+ 
+ 
+Build  Assembly  and  Instruction  
+ 
+OKAA  Solutions  (Team  5)  
+HotSeat  
+Carmel  High  School  
+Engineering  Design  &  Development  
+Kelly  Fulk,  Olivia  Hart,  Ahmed  Secen,  Abram  Weller  
+04/24/2025  
+V3  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+OKAA  Solutions                                                                                                                            2  
+Table  of  Contents  
+Chapter  1:  Scope  4 1.1:  Application  4 1.2:  Limitation  4 Chapter  2:  Applicable  Documents  5 2.1:  Government  Documents  5 2.2:  Specifications,  Standards,  and  Handbooks  5 2.3:  Other  government  documents,  drawings,  and  publications  5 2.4:  Non-government  publications  5 Chapter  3:  Safety  Precautions  8 3.1  Danger  8 3.2  Warning  8 3.3  Caution  8 3.4  Notice  9 Chapter  4:  Supporting  and  Test  Equipment/Tools/Fixtures  9 4.1:  Supporting  Equipment  9 4.2:  Test  Equipment  9 Chapter  5:  Build  and  Assembly  Procedures  10 Chapter  6:  Assembly  Drawings  15 Chapter  7:  Parts  List  17 References  18  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+OKAA  Solutions                                                                                                                            3  
+Chapter  1:  Scope  
+1.1:  Application  
+The  design  specification  should  be  applied  as  a  standard  for  all  other  documents  to  
+reference.
+ 
+All
+ 
+dimensional,
+ 
+performance,
+ 
+and
+ 
+construction
+ 
+constraints
+ 
+should
+ 
+be
+ 
+listed
+ 
+in
+ 
+the
+ 
+specification.
+ 
+The
+ 
+specification
+ 
+should
+ 
+be
+ 
+applied
+ 
+in
+ 
+documents
+ 
+such
+ 
+as
+ 
+the
+ 
+test
+ 
+instruction,
+ 
+build
+ 
+and
+ 
+assembly
+ 
+instruction,
+ 
+and
+ 
+in
+ 
+deliverables
+ 
+such
+ 
+as
+ 
+the
+ 
+critical
+ 
+design
+ 
+review,
+ 
+by
+ 
+providing
+ 
+performance
+ 
+guidelines,
+ 
+dimension
+ 
+constraints,
+ 
+and
+ 
+a
+ 
+record
+ 
+of
+ 
+progress.
+ 
+The
+ 
+SYSTEM
+ 
+should
+ 
+be
+ 
+designed
+ 
+to
+ 
+assist
+ 
+patrons
+ 
+with
+ 
+locating
+ 
+open
+ 
+seating
+ 
+in
+ 
+a
+ 
+public
+ 
+space.
+ 
+Due
+ 
+to
+ 
+this
+ 
+criteria,
+ 
+the
+ 
+SYSTEM
+ 
+should
+ 
+be
+ 
+applied
+ 
+in
+ 
+a
+ 
+library
+ 
+setting.
+ 
+Its
+ 
+crowd
+ 
+control
+ 
+and
+ 
+open
+ 
+seating
+ 
+regulation
+ 
+capabilities
+ 
+lend
+ 
+themselves
+ 
+to
+ 
+use
+ 
+in
+ 
+an
+ 
+indoor,
+ 
+public
+ 
+setting
+ 
+with
+ 
+non
+ 
+assigned
+ 
+seating,
+ 
+such
+ 
+as
+ 
+a
+ 
+library.
+ 
+ 
+1.2:  Limitation  
+ The  SYSTEM  will  be  limited  by  the  budget  of  the  project,  the  schedule  and  limited  time  
+of
+ 
+the
+ 
+project,
+ 
+and
+ 
+the
+ 
+method
+ 
+with
+ 
+which
+ 
+it
+ 
+collects
+ 
+and
+ 
+processes
+ 
+data.
+ 
+The
+ 
+budget
+ 
+for
+ 
+the
+ 
+project
+ 
+is
+ 
+300
+ 
+dollars
+ 
+total,
+ 
+with
+ 
+a
+ 
+limitation
+ 
+of
+ 
+150
+ 
+dollars
+ 
+allocated
+ 
+for
+ 
+each
+ 
+semester.
+ 
+The
+ 
+project
+ 
+was
+ 
+limited
+ 
+to
+ 
+a
+ 
+time
+ 
+frame
+ 
+of
+ 
+the
+ 
+standard
+ 
+academic
+ 
+year
+ 
+of
+ 
+36
+ 
+weeks,
+ 
+with
+ 
+18
+ 
+weeks
+ 
+per
+ 
+semester.
+ 
+The
+ 
+Raspberry
+ 
+Pi
+ 
+camera
+ 
+should
+ 
+be
+ 
+limited
+ 
+by
+ 
+its
+ 
+range
+ 
+and
+ 
+focal
+ 
+length.
+ 
+Onboard
+ 
+local
+ 
+processing
+ 
+may
+ 
+produce
+ 
+excess
+ 
+heat.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+OKAA  Solutions                                                                                                                            4  
+ 
+Chapter  2:  Applicable  Documents  
+2.1:  Government  Documents  
+2.1.1  40  CFR  761.20  Code  of  Federal  Regulations,  PART  761—Polychlorinated  
+Biphenyls
+ 
+(PCBs)
+ 
+Manufacturing,
+ 
+Processing,
+ 
+Distribution
+ 
+In
+ 
+Commerce,
+ 
+And
+ 
+Use
+ 
+Prohibitions.
+ 
+https://www.ecfr.gov/current/title-40/section-761.20 
+2.1.2  CDC  -  Safe  3D  Printing  
+https://blogs.cdc.gov/niosh-science-blog/2024/07/29/safe-3d-printing/ 
+2.2:  Specifications,  Standards,  and  Handbooks  
+2.2.1.  ISO  18434-1:2008:  Condition  monitoring  and  diagnostics  of  machines  —  
+Thermography
+ 
+ 
+https://www.iso.org/standard/41648.html  
+2.2.2.  ISO  10878:2013:  Non-destructive  testing  —  Infrared  thermography  
+https://www.iso.org/standard/46265.html  
+2.3:  Other  government  documents,  drawings,  and  publications  
+2.3.1  National  Vulnerability  Database  CVE-2021-38759  Raspberry  Pi  Software  
+Weaknesses
+ 
+and
+ 
+Solutions
+ 
+https://nvd.nist.gov/vuln/detail/CVE-2021-38759 
+2.4:  Non-government  publications  
+2.4.1:  Raspberry  Pi  Ltd  Rasberry  Pi  5  8Gb  Product  Brief  
+https://cdn-shop.adafruit.com/product-files/5813/raspberry-pi-5-product-brief.pdf 
+2.4.2  Raspberry  Pi  Ltd  Official  Raspberry  Pi  5  Active  Cooler  Product  Description  
+https://www.adafruit.com/product/5815#description 
+
+OKAA  Solutions                                                                                                                            5  
+2.4.3  Raspberry  Pi  Ltd  Brass  M2.5  Standoffs  for  Pi  HATs  -  Black  Plated  Technical  
+Details
+ 
+https://www.adafruit.com/product/2336#technical-details 
+2.4.4  Raspberry  Pi  Ltd  Raspberry  Pi  Camera  Module  3  NoIR  -  12MP  75  Degree  Infrared  
+Lens
+ 
+ 
+2.4.4.1  Camera  Module  3  Product  Brief  
+https://cdn-shop.adafruit.com/product-files/5659/camera-module-3-product-brief.
+pdf 
+2.4.4.2  Mechanical  Drawing   
+https://cdn-shop.adafruit.com/product-files/5659/camera-module-3-standard-mech
+anical-drawing.pdf 
+2.4.5  Raspberry  Pi  Ltd  Raspberry  Pi  5  FPC  Camera  Cable  -  22-pin  0.5mm  to  15-pin  1mm  
+-
+ 
+200mm
+ 
+long
+ 
+Technical
+ 
+Details
+ 
+https://www.adafruit.com/product/5818#technical-details 
+2.4.6  Is  PETG  Food  Safe?  Inplex  Custom  Extruders   
+https://www.inplexllc.com/blog/is-petg-food-safe/#:~:text=As%20just%20discussed%20
+PETG%20material,food%20containers%20and%20beverage%20bottles 
+2.4.7  PETS  University  of  Maryland  Terrapin  Works  
+https://terrapinworks.umd.edu/materials/petg#:~:text=PETG%20is%20an%20industrial%
+2Dgrade,and%20immune%20to%20UV%20light 
+2.4.8.  What  Is  Infrared  Thermography?  NORIFT  
+https://www.reliableplant.com/infrared-thermography-31572 
+ 
+ 
+
+OKAA  Solutions                                                                                                                            6  
+Chapter  3:  Safety  Precautions  
+ 3.1  Danger  
+3.1.1  Electrocution  –  Do  not  touch  the  raspberry  pi  while  it  is  in  operation,  the  current  
+will
+ 
+cause
+ 
+electrocution
+ 
+which
+ 
+will
+ 
+result
+ 
+in
+ 
+serious
+ 
+injury
+ 
+or
+ 
+death.
+ 
+ 
+3.2  Warning  
+3.2.1  Possible  electrocution  -  Touching  the  device  or  tampering/opening  the   device  while  
+it
+ 
+is
+ 
+in
+ 
+operation
+ 
+could
+ 
+result
+ 
+in
+ 
+electrocution,
+ 
+which
+ 
+will
+ 
+result
+ 
+in
+ 
+serious
+ 
+injury
+ 
+or
+ 
+death.
+ 
+ 
+3.2.2  Small  parts  -  During  assembly,  account  for  all  magnets  and  keep  away  from  
+children.
+ 
+Swallowing
+ 
+magnets
+ 
+could
+ 
+result
+ 
+in
+ 
+serious
+ 
+injury
+ 
+or
+ 
+death.
+ 
+ 
+3.3  Caution  
+3.3.1  Pinching  hazard  -  While  closing  the  lid  on  the  system,  keep  fingers  outside  the  box  
+to
+ 
+avoid
+ 
+pinching,
+ 
+which
+ 
+could
+ 
+cause
+ 
+minor
+ 
+injury.
+ 
+ 
+3.3.2  Sharp  edges  -  The  system  is  3D  printed,  so  the  edges  of  the  device  may  have  sharp  
+fragments
+ 
+that
+ 
+can
+ 
+cause
+ 
+minor
+ 
+injury.
+ 
+ 
+3.4  Notice  
+3.4.1  This  device  is  not  suitable  for  anyone  under  the  age  of  eighteen.  
+3.4.2  A  drill  should  not  be  used  for  installation  of  the  tapping  screws,  as  it  could  cause  
+the
+ 
+casing
+ 
+to
+ 
+break.
+ 
+ 
+3.4.3  Water  should  not  come  in  contact  with  any  electrical  component  of  the  device  as  it  
+could
+ 
+subject
+ 
+it
+ 
+to
+ 
+breakage.
+ 
+
+
+OKAA  Solutions                                                                                                                            7  
+Chapter  4:  Supporting  and  Test  Equipment/Tools/Fixtures  
+4.1:  Supporting  Equipment   
+4.1.1  Screwdriver  -  A  screwdriver  must  be  used  to  insert  the  tapping  screws  that  will  
+attach
+ 
+the
+ 
+Raspberry
+ 
+Pi
+ 
+to
+ 
+the
+ 
+casing.
+ 
+4.2:  Test  Equipment  
+4.2.1  Ruler  -  A  ruler  must  be  used  to  take  dimensions  of  the  3D  printed  model  and  
+confirm
+ 
+the
+ 
+tolerances
+ 
+were
+ 
+followed.
+ 
+ 4.2.2  Computer  -  A  computer  must  be  used  to  run  all  of  the  software  diagnostics.  
+4.2.3  Scale  -  A  scale  must  be  used  to  weigh  the  assembly  and  confirm  the  3D  printed  
+model
+ 
+is
+ 
+correct.
+ 
+                     
+
+OKAA  Solutions                                                                                                                            8  
+Chapter  5:  Build  and  Assembly  Procedures  
+ 
+
+
+OKAA  Solutions                                                                                                                            9  
+ 
+
+
+OKAA  Solutions                                                                                                                            10  
+
+
+OKAA  Solutions                                                                                                                            11  
+
+
+OKAA  Solutions                                                                                                                            12  
+
+
+OKAA  Solutions                                                                                                                            13  
+
+
+OKAA  Solutions                                                                                                                            14  
+   
+
+
+OKAA  Solutions                                                                                                                            15  
+ Chapter  6:  Specification  Control  Drawings  
+ 
+ 
+
+
+OKAA  Solutions                                                                                                                            16  
+ 
+
+
+OKAA  Solutions                                                                                                                            17  
+ 
+
+
+OKAA  Solutions                                                                                                                            18  
+ Chapter  7:  Parts  List  
+7.1  5  mm  diameter  2.5  mm  depth  circular  magnets  (8)   7.2  5mm  thick  3D  printed  PETG  plastic  case  97  x  68  x  53  mm  (1)   7.3  5mm  thick  3D  printed  PETG  plastic  lid  97x  68  mm  (1)   7.4  56  x  85  mm  Raspberry  Pi  Ltd  Rasberry  Pi  5  8Gb  (1)   7.5  30  x  58  mm   Raspberry  Pi  Ltd  Official  Raspberry  Pi  5  Active  Cooler  (1)   7.6  23  x  25  mm  Raspberry  Pi  Ltd  Raspberry  Pi  Camera  Module  3  NoIR  -  12MP  75  
+Degree
+ 
+Infrared
+ 
+Lens
+ 
+(1)
+ 
+  7.7   Raspberry  Pi  Ltd  Raspberry  Pi  5  FPC  Camera  Cable  -  22-pin  0.5mm  to  15-pin  1mm  
+-
+ 
+200mm
+ 
+long
+ 
+(1)
+  7.8  .25”  thread-cutting  self-tapping  screws  (8)   7.9  Wall  Power  Supply  Unit  USB  C  (1)   7.10  USB  A  to  Micro  B  cable  (1)                 
+
+OKAA  Solutions                                                                                                                            19  
+References  
+40  CFR  761.20  --  Prohibitions  and  exceptions.  (n.d.).  eCFR  :.  
+https://www.ecfr.gov/current/title-40/section-761.20
+ 
+(n.d.).  cdn-shop.adafruit.com  
+https://cdn-shop.adafruit.com/product-files/5659/camera-module-3-standard-mechanical-
+drawing.pdf
+ 
+Cve-2021-38759.  (2024,  November  21).  NVD.  https://nvd.nist.gov/vuln/detail/CVE-2021-38759  
+Industries,  A.  (n.d.).  Raspberry  Pi  5  FPC  camera  cable  -  22-pin  0.5mm  to  15-pin  1mm.  Adafruit  
+Industries,
+ 
+Unique
+ 
+&
+ 
+fun
+ 
+DIY
+ 
+electronics
+ 
+and
+ 
+kits.
+ 
+https://www.adafruit.com/product/5818#technical-details
+ 
+Infrared  thermography  explained.  (2019,  July  2).  Reliable  Plant.  
+https://www.reliableplant.com/infrared-thermography-31572
+ 
+Is  PETG  food  safe?  Find  out  with  Inplex  custom  extruders,  LLC.  (2023,  January  25).  Inplex  
+Custom
+ 
+Extruders,
+ 
+LLC.
+ 
+https://www.inplexllc.com/blog/is-petg-food-safe/#:~:text=As%20just%20discussed%20
+PETG%20material,food%20containers%20and%20beverage%20bottles
+ 
+ISO  10878:2013.  (n.d.).  ISO.  https://www.iso.org/standard/46265.html  
+ISO  18434-1:2008.  (n.d.).  ISO.  https://www.iso.org/standard/41648.html  
+Petg.  (n.d.).  Terrapin  Works.  
+https://terrapinworks.umd.edu/materials/petg#:~:text=PETG%20is%20an%20industrial%
+2Dgrade,and%20immune%20to%20UV%20light
+ 
+ 
+
+OKAA  Solutions                                                                                                                            20  
+Safe  3D  printing  is  for  everyone,  everywhere.  (2024,  November  25).  CDC  Blogs  |  Blogs  |  CDC.  
+https://blogs.cdc.gov/niosh-science-blog/2024/07/29/safe-3d-printing/
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

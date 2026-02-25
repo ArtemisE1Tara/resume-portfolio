@@ -1,0 +1,128 @@
+Critical     
+Design Review
+HotSeat: OKAA Solutions, Team 5
+Kelly Fulk, Olivia Hart, Ahmed Secen, Abram Weller
+April 24, 2025
+
+
+Team 
+Organization
+
+Team Organization Chart
+Project Manager
+Kelly Fulk
+Hardware Engineer
+Abram Weller
+Systems Engineer
+Olivia Hart
+Software Engineer
+Ahmed Secen
+
+Creating HotSeat
+
+Function Block Diagram
+
+
+Technical Drawings
+
+
+Technical Drawings
+
+
+Assembly Drawing
+
+
+Raspberry Pi 5 Electrical Schematic
+
+
+Camera Module 3 Electrical Schematic
+
+
+ Wiring Diagram
+
+
+ PCB Layout
+
+
+Programming Algorithm Flowchart
+
+
+Bill of Materials- Semester Two
+Total:
+$12.56
+Item Category Unit Cost Total Cost
+Cerpourt Threaded Inserts Hardware $3.66 $3.66
+Camera Swivel Joint Hardware $8.90 $8.90
+
+Build and Assembly Record
+
+
+Build and Assembly Record
+
+
+Form
+● SYSTEM HOUSING should be 
+printed with PETG ﬁlament
+● SYSTEM should not exceed 200 
+grams
+● SYSTEM should be contained in a 
+3d printed HOUSING 97mm±3mm 
+x 67mm±3mm x 59mm±3mm 
+(Length x Width x Height)
+
+
+Fit
+● SYSTEM should be mounted 
+semi-permanently to the wall via 
+self tapping screws. 
+● SYSTEM should remain 
+mounted for at least 3 years.
+
+
+Function
+● SYSTEM should detect an OCCUPANT in a chair from 15 ft 
+away
+● SYSTEM should detect chair data upon USER request with a 
+maximum latency of 1 second. 
+● SYSTEM should be able to detect 2 OCCUPANTS  with an 
+accuracy of ± 1
+● SYSTEM should be powered via wired 5.1V 5A power.
+
+
+Prototype Test Result and Evaluation
+3.1.2 Weight: Pass 
+3.1.3 Housing: Pass 
+3.2.1 Range: Pass
+3.2.2 Latency: Pass
+3.2.3 Quantity Detectable: Pass
+4.1.1 Operating Temperature: Pass
+4.1.3 Lifetime: Pass
+4.2.1 Failure Rate: Pass
+4.10.1 Environmental Impact: Pass
+
+
+Demonstration
+
+
+Demonstration
+
+
+Demonstration
+
+
+Demonstration
+
+
+Reflection
+● Development of mounting system
+○ Streamlined design from PDR
+■ Keyhole mount replaced with screws
+○ Issues with threaded inserts
+■ Purchased wrong thread width
+● Reprint of housing
+○ Accommodation for mounting system
+● Finalized test procedure documentation
+○ Maintaining references between documents
+
+Thank You
+Any Questions?

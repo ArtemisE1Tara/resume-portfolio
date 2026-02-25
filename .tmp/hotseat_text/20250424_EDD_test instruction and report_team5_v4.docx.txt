@@ -1,0 +1,883 @@
+ 
+
+OKAA  Solutions   1  
+ 
+ 
+ 
+ 
+ 
+Test  Instruction  &  Report  
+ 
+OKAA  Solutions  (Team  5)  
+HotSeat  
+Carmel  High  School  
+Engineering  Design  &  Development  
+Kelly  Fulk,  Olivia  Hart,  Ahmed  Secen,  Abram  Weller  
+04/24/2025  
+V4  
+ 
+               
+
+OKAA  Solutions   2  
+Table  of  Contents  
+ 
+Table  of  Contents  2 Chapter  1:  Scope  3  1.1:  Application  3  1.2:  Limitation  3  Chapter  2:  Applicable  Documents  4  2.1:  Government  Documents  4  2.2:  Specifications,  Standards,  and  Handbooks  4  2.3:  Other  government  documents,  drawings,  and  publications  4  2.4:  Non-government  publications  4  Chapter  3:  Safety  Precautions  6  3.1  Danger  6  3.2  Warning  6  3.3  Caution  6  3.4  Notice  6  Chapter  4:  Supporting  and  Test  Equipment/Tools/Fixtures  7  4.1:  Supporting  Equipment  7  4.2:  Test  Equipment  7  Chapter  5:  Test  Procedures  8  5.1:  Preparing  the  Testing  Area  8  5.2:  Prepare  Testing  Equipment  8  5.3  Test  the  Device  8  Chapter  6:  Test  Log  with  Pass/Fail  Criteria  9  Chapter  7:  Testing  Procedures………………………………………………………………...14  References  18   
+           
+
+OKAA  Solutions   3  
+Chapter  1:  Scope  
+1.1:  Application  
+The  design  specification  should  be  applied  as  a  standard  for  all  other  documents  to  
+reference.
+ 
+All
+ 
+dimensional,
+ 
+performance,
+ 
+and
+ 
+construction
+ 
+constraints
+ 
+should
+ 
+be
+ 
+listed
+ 
+in
+ 
+the
+ 
+specification.
+ 
+The
+ 
+specification
+ 
+should
+ 
+be
+ 
+applied
+ 
+in
+ 
+documents
+ 
+such
+ 
+as
+ 
+the
+ 
+test
+ 
+instruction,
+ 
+build
+ 
+and
+ 
+assembly
+ 
+instruction,
+ 
+and
+ 
+in
+ 
+deliverables
+ 
+such
+ 
+as
+ 
+the
+ 
+critical
+ 
+design
+ 
+review,
+ 
+by
+ 
+providing
+ 
+performance
+ 
+guidelines,
+ 
+dimension
+ 
+constraints,
+ 
+and
+ 
+a
+ 
+record
+ 
+of
+ 
+progress.
+ 
+The
+ 
+system
+ 
+should
+ 
+be
+ 
+designed
+ 
+to
+ 
+assist
+ 
+patrons
+ 
+with
+ 
+locating
+ 
+open
+ 
+seating
+ 
+in
+ 
+a
+ 
+public
+ 
+space.
+ 
+Due
+ 
+to
+ 
+this
+ 
+criteria,
+ 
+the
+ 
+system
+ 
+should
+ 
+be
+ 
+applied
+ 
+in
+ 
+a
+ 
+library
+ 
+setting.
+ 
+Its
+ 
+crowd
+ 
+control
+ 
+and
+ 
+open
+ 
+seating
+ 
+regulation
+ 
+capabilities
+ 
+lend
+ 
+themselves
+ 
+to
+ 
+use
+ 
+in
+ 
+an
+ 
+indoor,
+ 
+public
+ 
+setting
+ 
+with
+ 
+non
+ 
+assigned
+ 
+seating,
+ 
+such
+ 
+as
+ 
+a
+ 
+library.
+ 
+ 
+1.2:  Limitation  
+The  system  will  be  limited  by  the  budget  of  the  project,  the  schedule  and  limited  time  of  
+the
+ 
+project,
+ 
+and
+ 
+the
+ 
+method
+ 
+with
+ 
+which
+ 
+it
+ 
+collects
+ 
+and
+ 
+processes
+ 
+data.
+ 
+The
+ 
+budget
+ 
+for
+ 
+the
+ 
+project
+ 
+is
+ 
+300
+ 
+dollars
+ 
+total,
+ 
+with
+ 
+a
+ 
+limitation
+ 
+of
+ 
+150
+ 
+dollars
+ 
+allocated
+ 
+for
+ 
+each
+ 
+semester.
+ 
+The
+ 
+project
+ 
+was
+ 
+limited
+ 
+to
+ 
+a
+ 
+time
+ 
+frame
+ 
+of
+ 
+the
+ 
+standard
+ 
+academic
+ 
+year
+ 
+of
+ 
+36
+ 
+weeks,
+ 
+with
+ 
+18
+ 
+weeks
+ 
+per
+ 
+semester.
+ 
+The
+ 
+Raspberry
+ 
+Pi
+ 
+camera
+ 
+should
+ 
+be
+ 
+limited
+ 
+by
+ 
+its
+ 
+range
+ 
+and
+ 
+focal
+ 
+length.
+ 
+Onboard
+ 
+local
+ 
+processing
+ 
+may
+ 
+produce
+ 
+excess
+ 
+heat.
+ 
+ 
+ 
+ 
+ 
+ 
+
+OKAA  Solutions   4  
+Chapter  2:  Applicable  Documents  
+2.1:  Government  Documents  
+2.1.1  40  CFR  761.20  Code  of  Federal  Regulations,  PART  761—Polychlorinated  
+Biphenyls
+ 
+(PCBs)
+ 
+Manufacturing,
+ 
+Processing,
+ 
+Distribution
+ 
+In
+ 
+Commerce,
+ 
+And
+ 
+Use
+ 
+Prohibitions.
+ 
+https://www.ecfr.gov/current/title-40/section-761.20 
+2.1.2  CDC  -  Safe  3D  Printing  
+https://blogs.cdc.gov/niosh-science-blog/2024/07/29/safe-3d-printing/ 
+2.2:  Specifications,  Standards,  and  Handbooks  
+2.2.1.  ISO  18434-1:2008:  Condition  monitoring  and  diagnostics  of  machines  —  
+Thermography
+ 
+ 
+https://www.iso.org/standard/41648.html  
+2.2.2.  ISO  10878:2013:  Non-destructive  testing  —  Infrared  thermography  
+https://www.iso.org/standard/46265.html  
+2.3:  Other  government  documents,  drawings,  and  publications  
+2.3.1  National  Vulnerability  Database  CVE-2021-38759  Raspberry  Pi  Software  
+Weaknesses
+ 
+and
+ 
+Solutions
+ 
+https://nvd.nist.gov/vuln/detail/CVE-2021-38759 
+2.4:  Non-government  publications  
+2.4.1:  Raspberry  Pi  Ltd  Rasberry  Pi  5  8Gb  Product  Brief  
+https://cdn-shop.adafruit.com/product-files/5813/raspberry-pi-5-product-brief.pdf 
+2.4.2  Raspberry  Pi  Ltd  Official  Raspberry  Pi  5  Active  Cooler  Product  Description  
+https://www.adafruit.com/product/5815#description 
+
+OKAA  Solutions   5  
+2.4.3  Raspberry  Pi  Ltd  Brass  M2.5  Standoffs  for  Pi  HATs  -  Black  Plated  Technical  
+Details
+ 
+https://www.adafruit.com/product/2336#technical-details 
+2.4.4  Raspberry  Pi  Ltd  Raspberry  Pi  Camera  Module  3  NoIR  -  12MP  75  Degree  Infrared  
+Lens
+ 
+ 
+2.4.4.1  Camera  Module  3  Product  Brief  
+https://cdn-shop.adafruit.com/product-files/5659/camera-module-3-product-brief.
+pdf 
+2.4.4.2  Mechanical  Drawing   
+https://cdn-shop.adafruit.com/product-files/5659/camera-module-3-standard-mech
+anical-drawing.pdf 
+2.4.5  Raspberry  Pi  Ltd  Raspberry  Pi  5  FPC  Camera  Cable  -  22-pin  0.5mm  to  15-pin  1mm  
+-
+ 
+200mm
+ 
+long
+ 
+Technical
+ 
+Details
+ 
+https://www.adafruit.com/product/5818#technical-details 
+2.4.6  Is  PETG  Food  Safe?  Inplex  Custom  Extruders   
+https://www.inplexllc.com/blog/is-petg-food-safe/#:~:text=As%20just%20discussed%20
+PETG%20material,food%20containers%20and%20beverage%20bottles 
+2.4.7  PETS  University  of  Maryland  Terrapin  Works  
+https://terrapinworks.umd.edu/materials/petg#:~:text=PETG%20is%20an%20industrial%
+2Dgrade,and%20immune%20to%20UV%20light 
+2.4.8.  What  Is  Infrared  Thermography?  NORIFT  
+https://www.reliableplant.com/infrared-thermography-31572 
+ 
+
+OKAA  Solutions   6  
+Chapter  3:  Safety  Precautions  
+ 3.1  Danger  
+3.1.1  Electrocution  –  Do  not  touch  the  raspberry  pi  while  it  is  in  operation,  the  current  
+will
+ 
+cause
+ 
+electrocution
+ 
+which
+ 
+will
+ 
+result
+ 
+in
+ 
+serious
+ 
+injury
+ 
+or
+ 
+death.
+ 
+ 
+3.2  Warning  
+3.2.1  Possible  electrocution  -  Touching  the  device  or  tampering/opening  the   device  while  
+it
+ 
+is
+ 
+in
+ 
+operation
+ 
+could
+ 
+result
+ 
+in
+ 
+electrocution,
+ 
+which
+ 
+will
+ 
+result
+ 
+in
+ 
+serious
+ 
+injury
+ 
+or
+ 
+death.
+ 
+ 
+3.2.2  Small  parts  -  During  assembly,  account  for  all  magnets  and  keep  away  from  
+children.
+ 
+Swallowing
+ 
+magnets
+ 
+could
+ 
+result
+ 
+in
+ 
+serious
+ 
+injury
+ 
+or
+ 
+death.
+ 
+ 
+3.3  Caution  
+3.3.1  Pinching  hazard  -  While  closing  the  lid  on  the  system,  keep  fingers  outside  the  box  
+to
+ 
+avoid
+ 
+pinching,
+ 
+which
+ 
+could
+ 
+cause
+ 
+minor
+ 
+injury.
+ 
+ 
+3.3.2  Sharp  edges  -  The  system  is  3D  printed,  so  the  edges  of  the  device  may  have  sharp  
+fragments
+ 
+that
+ 
+can
+ 
+cause
+ 
+minor
+ 
+injury.
+ 
+ 
+3.4  Notice  
+3.4.1  This  device  is  not  suitable  for  anyone  under  the  age  of  eighteen.  
+3.4.2  A  drill  should  not  be  used  for  installation  of  the  tapping  screws,  as  it  could  cause  
+the
+ 
+casing
+ 
+to
+ 
+break.
+ 
+ 
+3.4.3  Water  should  not  come  in  contact  with  any  electrical  component  of  the  device  as  it  
+could
+ 
+subject
+ 
+it
+ 
+to
+ 
+breakage.
+ 
+
+
+OKAA  Solutions   7  
+Chapter  4:  Supporting  and  Test  Equipment/Tools/Fixtures  
+4.1:  Supporting  Equipment   
+4.1.1  Screwdriver  -  A  screwdriver  must  be  used  to  insert  the  tapping  screws  that  will  
+attach
+ 
+the
+ 
+Raspberry
+ 
+Pi
+ 
+to
+ 
+the
+ 
+casing.
+ 
+4.2:  Test  Equipment  
+4.2.1  Ruler  -  A  ruler  must  be  used  to  take  dimensions  of  the  3D  printed  model  and  
+confirm
+ 
+the
+ 
+tolerances
+ 
+were
+ 
+followed.
+ 
+ 4.2.2  Computer  -  A  computer  must  be  used  to  run  all  of  the  software  diagnostics.  
+4.2.3  Scale  -  A  scale  must  be  used  to  weigh  the  assembly  and  confirm  the  3D  printed  
+model
+ 
+is
+ 
+correct.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+OKAA  Solutions   8  
+Chapter  5:  Test  Procedures  
+5.1:  Preparing  the  Testing  Area  
+5.1.1  Find  a  stable,  flat  surface  to  serve  as  a  testing  area  with  a  power  source  and  
+accessible
+ 
+computer.
+ 
+5.1.2  Clear  the  testing  area  of  all  food,  electrical,  or  other  hazardous  items.  
+ 5.2:  Prepare  Testing  Equipment  
+ 5.2.1  Install  the  appropriate  software  on  the  nearby  computer.  
+ 5.2.2  Assume  that  all  supporting  tools  are  in  a  usable  condition.  
+ 5.2.3  Turn  on  device  with  the  power  supply  unit  and  open  software.  
+ 5.2.4  Set  up  chairs  in  view  of  the  device’s  camera.   
+ 
+5.3  Test  the  Device  
+ 5.3.1  Click  “Analyze  Image”  on  the  user  interface.  
+ 5.3.2  If  results  are  accurate,  add  a  success  to  the  testing  log.   
+ 
+ 
+ 
+ 
+        
+
+OKAA  Solutions   9  
+Chapter  6:  Test  Log  with  Pass/Fail  Criteria  
+ Feature  Pass/Fail  Criteria   Status  Validation  
+3.1.1  SYSTEM  HOUSING  should  be  printed  with  PETG  filament  
+PASS  Certified  with  CCPL  and  compared  with  PETG  filament.   
+3.1.2  Hardware  should  not  exceed  200  grams.  
+PASS  Dependent  upon  different  versions  of  the  case.  Case  iterations  are  still  in  progress.  
+3.1.3  System  should  be  contained  in  a  3d  printed  housing  97mm±3mm  x  67mm±3mm  x  59mm±3mm  (Length  x  Width  x  Height)  
+PASS  Measured  casing  with  ruler.  
+3.2.1  The  range  of  the  seats  must  be  at  least  15  ft  away  from  the  camera  assembly.  
+PASS  Measured  distance  from  camera  to  points  of  detection.  Distance  was  18  feet.   
+3.2.2  The  SYSTEM  should  detect  chair  data  upon  USER  request  with  a  maximum  response  time  of  10000  ms.  
+PASS  Watch  console  logs  for  latency/response  time.   Average  response  time  was  5346  ms.  
+3.2.3  The  SYSTEM  should  be  able  to  detect  at  least  2  OCCUPANTS  with  an  accuracy  of  ±  1  individuals.  
+PASS  HotSeat  was  able  to  accurately  analyze  up  to  3  chairs  and  their  occupancy.  
+3.2.4  The  SYSTEM  should  be  powered  via  wired  5.1V  5A  power.  
+PASS  The  system  and  its  peripherals  are  sufficiently  powered  by  a  single  5.1V  5A  power  supply.  
+
+OKAA  Solutions   10  
+3.3.1  The  SYSTEM  should  remain  mounted  for  at  least  30  days  without  physical  maintenance.  
+PASS  SYSTEM  remained  mounted  to  treated  pine  (to  simulate  a  wall  stud)  for  a  30  day  test  period.   
+3.3.2  The  SYSTEM  should  remain  mounted  stationary  to  a  wall  for  at  least  3  years.  
+PASS  Strong  force  was  used  to  simulate  extended  wear.  
+4.1.1  The  SYSTEM  should  function  at  room  temperature  (68–72  °F),  with  low  humidity  (between  30%  and  50%).  
+PASS  During  testing,  ensured  that  system  functioned  at  room  temperature  
+4.1.2  The  SYSTEM  does  not  need  to  function  under  high  vibration  or  stress  conditions  
+PASS  No  test  required,  No  test  performed.  
+4.1.3  The  SYSTEM  should  remain  mounted  stationary  to  a  wall  for  at  least  3  years.  
+PASS  See  3.3.2  
+4.2.1  SYSTEM  should  have  a  mean  time  between  failure  of  at  least  one  week.  
+PASS  During  trails  SYSTEM  failed  in  intervals  of  more  than  one  week  
+4.3.1  Camera  Module:  Low  power  camera  SYSTEMs  do  not  pose  a  health  risk  (Adafruit  industries,  2021).  
+PASS  Certified  by  manufacturer  
+4.3.2  PETG  3D  Printer  Filament:  Fumes  are  non  toxic,  very  limited  off-gassing  (INPLEX  LLC,  2024).  
+PASS  Certified  by  manufacturer  
+
+OKAA  Solutions   11  
+4.4.1  The  SOFTWARE  should  be  able  to  receive  updates  for  the  entirety  of  the  lifespan  of  the  SYSTEM.  
+PASS  SOFTWARE  updates  were  successful  for  the  entirety  of  testing  and  development  
+4.4.2  Camera  Module  Lifespan:  greater  than  three  years  [under  ideal  conditions]  (Adafruit  industries,  2021).  
+PASS  Verified  in  Adafruit  camera  module  specifications  
+4.4.3  PETG  3D  Printer  Filament  Lifespan:  greater  than  three  years  [under  ideal  conditions]  (Adafruit  industries,  2021).  
+PASS  Verified  by  Adafruit  PETG  3D  specifications  
+4.4.4  Raspberry  Pi  board  Lifespan:  greater  than  three  years  [under  ideal  conditions]  (Adafruit  industries,  2021)  
+PASS  Verified  by  Adafruit  Raspberry  Pi  Specifications   
+4.4.5  Raspberry  Pi  5  Active  Cooler  Lifespan:  greater  than  three  years  [under  ideal  conditions]  (Adafruit  industries,  2021)  
+PASS  Verified  by  Adafruit  Raspberry  Pi  5  Active  Cooler  Specifications  
+4.5.1  SOFTWARE:  Server  error  logging  should  be  comprehensive  with  NextJS  and  Python  debugging  tools.  
+PASS  Follow  code  documentation  for  setting  up  and  using  error  analysis  tools.  
+4.6.1  The  WEBSITE  should  have  an  easily  navigable  user  interface.  
+PASS  Certified  by  customer  trials  
+
+OKAA  Solutions   12  
+4.6.2  The  SYSTEM  should  be  attached  semi-permanently  to  a  surface  and  will  not  be  handled  by  USERS.  
+PASS  SYSTEM  was  secured  semi-permanently  to  a  wooden  beam  with  self  tapping  screws  
+4.7.1  The  HOUSING  should  be  3D  printed  at  a  local  printing  location  with  well  stocked  filament.  
+PASS  Confirmed  at  retrieval.  
+4.7.2  The  processor  and  camera  should  be  connected  with  manufacturer  recommended  and  unmodified  wiring  and  mounting.  
+PASS  Certified  with  manufacturer  and  observation  of  the  connection.   
+4.8.1  Updates  to  the  WEBSITE  and  Raspberry  Pi  should  take  place  instantaneously  given  that  they  are  both  connected  to  WiFi.  
+PASS  Was  able  to  SSH  into  the  Raspberry  Linux  environment  and  push  code  from  laptop.  
+4.8.2  Maintenance  to  the  HARDWARE  should  be  achievable  by  removing  the  HOUSING  and  accessing  the  components.  
+PASS  Housing  was  removed  and  it  was  determined  that  all  hardware  could  be  appropriately  accessed.   
+4.9.1  All  parts  are  available  from  multiple  online  vendors  and  they  use  the  same  interface  with  the  Raspberry  Pi.  
+PASS  This  was  certified  to  be  true  by  finding  the  parts  from  multiple  vendors.  
+4.10.1  SYSTEM  should  not  have  any  impact  on  the  environment  aside  
+PASS  Energy  usage  was  verified  in  Raspberry  Pi  specification  and  
+
+OKAA  Solutions   13  
+from  their  energy  use  of  less  than  2  kilowatt-hours  per  month.  
+observed  in  the  energy  bill.   
+4.11.1  The  HOUSING  should  have  filleted  edges  and  be  rectangular  in  shape.  
+PASS  Rounded  edges  were  observed  and  quantified  with  a  protractor.   
+4.11.2  The  WEBSITE  should  have  a  minimalist  design  containing  no  features  that  are  unnecessary  to  the  functionality.  
+PASS  Website  was  observed  by  a  sample  population  to  validate  minimalist  qualities.   
+4.12.1  The  SYSTEM  should  be  stored  at  margins  slightly  extended  from  room  temperature  (58-62  °F)  with  humidity  (0-50%).  
+PASS  See  4.1.1  
+4.13.1  The  HOUSING  should  be  3D  printed  out  of  PETG  3D  printing  filament.  
+PASS  See  3.1.1  
+4.13.2  The  material  used  for  the  HOUSING  should  be  non-toxic,  UV  resistant,  and  waterproof.  
+PASS  Validated  by  PETG  specification  and  water  and  sun  testing.   
+          
+
+OKAA  Solutions   14  
+Chapter  7:  Testing  Procedures  
+ Feature  Procedures  
+3.1.1  Inspect  the  label  on  the  bottom  surface  of  the  system  and  verify  that  it  reads  PETG  filament.   
+3.1.2  Obtain  a  scale,  setting  the  units  to  grams,  and  weigh  the  system.  Verify  that  the  reading  is  within  5g  of  200g.   
+3.1.3  Obtain  a  ruler  with  millimeter  units,  and  verify  that  the  length  of  the  system  is  97mm,  the  width  is  67mm,  and  the  height  is  59mm.  Note  that  if  these  dimensions  are  within  3mm  of  the  target  values  it  is  still  considered  a  pass  due  to  tolerance.   
+3.2.1  Obtain  a  tape  measure  using  Imperial  units  and  position  a  test  occupant  15  ft  away  from  the  system  and  run  a  trail  analysis.  
+3.2.2  Run  a  test  detection  with  a  single  occupant,  use  the  inbuilt  software  delay  timer  to  ensure  that  the  delay  is  less  than  1  second.  
+3.2.3  Run  a  test  detection  using  two  separate  occupants  in  separate  seating  arrangements.   
+3.2.4  Connect  the  system  to  a  power  supply  producing   5.1V  and  5A  and  ensure  that  all  processes  function  properly  by  testing  procedures  3.2.1-3.2.3  
+3.3.1  Use  a  screwdriver  or  electric  drill  to  secure  the  system  to  the  wall  using  included  self  tapping  screws  of  the  proper  size.  Apply  tension  to  the  attachment  and  ensure  that  the  fastening  will  not  release  
+3.3.2  Apply  constant,  strong,  tension  to  the  attachment  point  to  simulate  at  least  3  years  of  regular  wear  (supporting  the  weight  of  the  system).  
+4.1.1  Using  a  thermostat  and  a  humidity  monitor,  
+
+OKAA  Solutions   15  
+ensure  that  the  system  is  functioning  at  multiple  points  along  the  suggested  temperature  range.  
+4.1.2  The  system  is  statically  installed  and  will  not  be  exposed  to  vibrations  or  high  stress  conditions.  
+4.1.3  Apply  constant,  strong,  tension  to  the  attachment  point  to  simulate  at  least  3  years  of  regular  wear  (supporting  the  weight  of  the  system).  
+4.2.1  Run  continuous  detections  at  a  higher  rate  than  typical  to  simulate  one  week  of  use,  ensure  that  only  one  failure  occurred.  
+4.3.1  This  has  been  verified  by  the  manufacturer  and  therefore  does  not  require  a  testing  procedure.   
+4.3.2  This  has  been  verified  by  the  manufacturer  and  therefore  does  not  require  a  testing  procedure.   
+4.4.1  Ensure  that  the  system  lag  time  does  not  increase  drastically  over  the  lifespan  of  the  system  to  verify  that  it  is  receiving  updates.  
+4.4.2  This  has  been  verified  by  the  manufacturer  and  therefore  does  not  require  a  testing  procedure.   
+4.4.3  This  has  been  verified  by  the  manufacturer  and  therefore  does  not  require  a  testing  procedure.   
+4.4.4  This  has  been  verified  by  the  manufacturer  and  therefore  does  not  require  a  testing  procedure.   
+4.4.5  This  has  been  verified  by  the  manufacturer  and  therefore  does  not  require  a  testing  procedure.   
+4.5.1  Should  an  error  occur,  cross-reference  the  error  message  with  NextJS  and  Python  debugging  tools  using  the  internet  or  an  IDE  
+
+OKAA  Solutions   16  
+and  compiler.   
+4.6.1  Navigate  through  the  user  interface  before  and  after  setup  and  determine  if  the  user  components  match  their  functions  with  no  unnecessary  features.   
+4.6.2  After  mounting  the  system,  ensure  that  it  remains  in  place  without  any  human  assistance.   
+4.7.1  Verify  using  the  label  that  the  system  was  3D  printed  at  a  local  location.   
+4.7.2  Inspect  the  wiring  and  mounting  components  and  visually  verify  that  they  match  those  on  the  parts  list  and  do  not  switch  them  out  or  remove  them.   
+4.8.1  When  the  manufacturer  releases  a  system  update,  ensure  there  is  no  lag  time  in  the  processing  of  the  system  by  beginning  or  continuing  usage.   
+4.8.2  Remove  the  housing  by  carefully  lifting  up  the  lid  from  the  magnets  to  ensure  the  accessibility  of  the  internal  components.   
+4.9.1  Verify  using  the  internet  that  the  components  are  available  from  multiple  vendors  and  use  the  same  interface  as  the  Raspberry  Pi.   
+4.10.1  At  the  end  of  the  lifetime  of  the  product,  be  sure  to  recycle  the  system  at  a  local  electronics  drive  to  ensure  no  environmental  impact  other  than  the  energy  usage  takes  place.  
+4.11.1  Certify  that  the  edges  of  the  casing  are  filleted  and  the  system  is  rectangular  in  shape  by  visually  inspecting  each  edge.                              
+4.11.2  Inspect  the  website  to  ensure  that  the  minimalist  design  language  is  maintained,  eg.  Each  element  serves  an  obvious  purpose  with  no  excess.  
+4.12.1  Using  a  thermostat,  verify  that  the  
+
+OKAA  Solutions   17  
+temperature  and  humidity  of  the  storage  location  is  within  the  specified  ranges.  
+4.13.1  Material  used  should  be  certified  by  the  printing  lab  prior  to  delivery.  
+4.13.2  Material  used  should  be  certified  as  non-toxic,  UV  resistant,  and  waterproof   by  the  printing  lab  prior  to  printing.                                     
+
+OKAA  Solutions   18  
+References  
+ 40  CFR  761.20  --  Prohibitions  and  exceptions.  (n.d.).  eCFR  :.  
+https://www.ecfr.gov/current/title-40/section-761.20
+ 
+(n.d.).  cdn-shop.adafruit.com  
+https://cdn-shop.adafruit.com/product-files/5659/camera-module-3-standard-mechanical-
+drawing.pdf
+ 
+Cve-2021-38759.  (2024,  November  21).  NVD.  
+https://nvd.nist.gov/vuln/detail/CVE-2021-38759
+ 
+Industries,  A.  (n.d.).  Raspberry  Pi  5  FPC  camera  cable  -  22-pin  0.5mm  to  15-pin  1mm.  
+Adafruit
+ 
+Industries,
+ 
+Unique
+ 
+&
+ 
+fun
+ 
+DIY
+ 
+electronics
+ 
+and
+ 
+kits.
+ 
+https://www.adafruit.com/product/5818#technical-details
+ 
+Infrared  thermography  explained.  (2019,  July  2).  Reliable  Plant.  
+https://www.reliableplant.com/infrared-thermography-31572
+ 
+Is  PETG  food  safe?  Find  out  with  Inplex  custom  extruders,  LLC.  (2023,  January  25).  
+Inplex
+ 
+Custom
+ 
+Extruders,
+ 
+LLC.
+ 
+https://www.inplexllc.com/blog/is-petg-food-safe/#:~:text=As%20just%20discussed%20
+PETG%20material,food%20containers%20and%20beverage%20bottles
+ 
+ISO  10878:2013.  (n.d.).  ISO.  https://www.iso.org/standard/46265.html  
+ISO  18434-1:2008.  (n.d.).  ISO.  https://www.iso.org/standard/41648.html  
+Petg.  (n.d.).  Terrapin  Works.  
+https://terrapinworks.umd.edu/materials/petg#:~:text=PETG%20is%20an%20industrial%
+2Dgrade,and%20immune%20to%20UV%20light
+ 
+ 
+
+OKAA  Solutions   19  
+Safe  3D  printing  is  for  everyone,  everywhere.  (2024,  November  25).  CDC  Blogs  |  Blogs  |  
+CDC.
+ 
+https://blogs.cdc.gov/niosh-science-blog/2024/07/29/safe-3d-printing/
+ 

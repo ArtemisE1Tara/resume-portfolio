@@ -1,19 +1,28 @@
-'use client'
-import Image from "next/image";
 import Link from "next/link";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Separator } from "@/components/ui/separator";
-import { GitHubLogoIcon, LinkedInLogoIcon } from "@radix-ui/react-icons";
-import { useState } from "react";
 import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
 
 
 export default function Home() {
-  const [isProjectsOpen, setIsProjectsOpen] = useState(false);
-  const [expandedImage, setExpandedImage] = useState<string | null>(null);
-
   return (
     <main className="max-w-2xl mx-auto p-6 space-y-8">
+      {/*<div className="rounded-xl border bg-card p-5 shadow-sm space-y-3">
+        <div className="flex items-center justify-between gap-3 flex-wrap">
+          <Badge variant="secondary">Featured Project</Badge>
+          <Button asChild size="sm" variant="outline">
+            <Link href="/portfolio">View HotSeat Portfolio</Link>
+          </Button>
+        </div>
+        <div className="space-y-1">
+          <h2 className="text-xl font-semibold">HotSeat Project Portfolio</h2>
+          <p className="text-sm text-muted-foreground">
+            Full design specification, build instructions, test report, and critical design review in one place.
+          </p>
+        </div>
+      </div>*/}
+
       {/* Header */}
       <div className="flex space-x-4 items-center mb-8">
         <Avatar className="h-20 w-20">
@@ -23,6 +32,12 @@ export default function Home() {
         <div className="space-y-1">
           <h1 className="text-2xl font-semibold">Ahmed Secen</h1>
           <p className="text-lg text-muted-foreground">University of Cincinnati</p>
+          <Link
+            href="/portfolio"
+            className="inline-block text-sm text-muted-foreground underline underline-offset-4 hover:text-foreground"
+          >
+            Portfolio
+          </Link>
         </div>
       </div>
 
@@ -218,112 +233,7 @@ export default function Home() {
         </ul>
       </div>
 
-      {/* Project Portfolio */}
-      <div className="space-y-4">
-        <button
-          onClick={() => setIsProjectsOpen(!isProjectsOpen)}
-          className="flex items-center justify-between w-full text-left"
-        >
-          <h3 className="text-lg font-semibold">Project Portfolio</h3>
-          <span className="text-base text-muted-foreground">
-            {isProjectsOpen ? '−' : '+'}
-          </span>
-        </button>
-        
-        {isProjectsOpen && (
-          <div className="space-y-6 pl-4 border-l-2 border-muted">
-            <div className="space-y-4">
-              <div className="space-y-2">
-                <h4 className="text-lg font-medium">HotSeat</h4>
-                <div className="text-base text-muted-foreground space-y-1">
-                  <p><strong>Team:</strong> OKAA Solutions (Kelly Fulk, Olivia Hart, Ahmed Secen, Abram Weller)</p>
-                  <p><strong>Date:</strong> August 2024 - May 2025</p>
-                </div>
-              </div>
-
-              <div className="space-y-3">
-                <div>
-                  <h5 className="font-medium text-base mb-1">Problem Statement</h5>
-                  <p className="text-base text-muted-foreground">
-                    Public establishments often lack sufficient seating for all users. The Carmel Library had 1,649 daily visitors in 2023, 
-                    with 73% of surveyed students having difficulty finding adequate seating. Our project solves the problem of students 
-                    searching for study spaces by providing real-time occupancy data.
-                  </p>
-                </div>
-
-                <div>
-                  <h5 className="font-medium text-base mb-1">Solution</h5>
-                  <p className="text-base text-muted-foreground">
-                    A discrete camera-based system that collects and displays occupancy data to help users determine optimal times 
-                    to visit public spaces. The system detects up to 10 occupants from 15+ feet away with ±3 accuracy and responds 
-                    to requests within one second.
-                  </p>
-                </div>
-
-                <div>
-                  <h5 className="font-medium text-base mb-1">Technical Highlights</h5>
-                  <div className="text-base text-muted-foreground space-y-1">
-                    <p>• 3D-printed PETG housing (97×67×59mm, &lt;200g)</p>
-                    <p>• Raspberry Pi-powered with camera module</p>
-                    <p>• Wall-mounted system designed for 3+ year lifespan</p>
-                    <p>• &lt;2 kWh monthly energy consumption</p>
-                    <p>• Real-time web interface with instant WiFi updates</p>
-                  </div>
-                </div>
-
-                <div className="space-y-2">
-                  <h5 className="font-medium text-base">Project Images</h5>
-                  <div className="grid grid-cols-2 gap-3">
-                    <Image
-                      src="/hot-seat.jpg"
-                      alt="HotSeat Project Image 1"
-                      width={300}
-                      height={200}
-                      className="rounded-md cursor-pointer hover:opacity-80 transition-opacity"
-                      onClick={() => setExpandedImage("/hot-seat.jpg")}
-                    />
-                    <Image
-                      src="/spec-control.png"
-                      alt="HotSeat Project Image 2"
-                      width={300}
-                      height={200}
-                      className="rounded-md cursor-pointer hover:opacity-80 transition-opacity"
-                      onClick={() => setExpandedImage("/spec-control.png")}
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        )}
-      </div>
-
       <Separator />
-
-      {/* Image Modal */}
-      {expandedImage && (
-        <div 
-          className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4"
-          onClick={() => setExpandedImage(null)}
-        >
-          <div className="relative max-w-4xl max-h-full">
-            <Image
-              src={expandedImage}
-              alt="Expanded project image"
-              width={800}
-              height={600}
-              className="rounded-lg object-contain max-w-full max-h-full"
-              onClick={(e) => e.stopPropagation()}
-            />
-            <button
-              onClick={() => setExpandedImage(null)}
-              className="absolute top-4 right-4 text-white bg-black bg-opacity-50 rounded-full w-8 h-8 flex items-center justify-center hover:bg-opacity-75 transition-colors"
-            >
-              ×
-            </button>
-          </div>
-        </div>
-      )}
     </main>
   );
 }

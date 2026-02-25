@@ -1,0 +1,1407 @@
+OKAA  Solutions   1  
+ 
+ 
+Design  Specification  
+ 
+ 
+OKAA  Solutions  (Team  5)  
+HotSeat  
+Carmel  High  School  
+Engineering  Design  &  Development  
+Kelly  Fulk,  Olivia  Hart,  Ahmed  Secen,  Abram  Weller  
+04/24/2025  
+V8  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+OKAA  Solutions   2  
+ 
+Table  of  contents  
+Chapter  1:  Scope  3 1.1:  Problem  Statement  3 1.2:  Design  Statement  3 1.3:  Application  4 1.4:  Limitation  4 Chapter  2:  Applicable  Documents  5 2.1:  Government  Documents  5 2.2:  Specifications,  Standards,  and  Handbooks  5 2.3:  Other  government  documents,  drawings,  and  publications  5 2.4:  Non-government  publications  5 Chapter  3:  Requirements  7 3.1:  Form  7 3.2:  Function  7 3.3:  Fit  7 Chapter  4:  Performance  8 4.1:  Qualification  8 4.2:  Reliability  8 4.3:  Safety  8 4.4:  Durability  8 4.5:  Testability  9 4.6:  Operability  9 4.7:  Manufacturability  9 4.8:  Maintainability  9 4.9:  Interchangeability  9 4.10:  Sustainability  10 4.12:  Storage  10 4.13:  Material  10 Chapter  5:  Verification  &  Validation  10 Chapter  6:  Specification  Control  Drawing  18 Chapter  7:  References  19  
+
+OKAA  Solutions   3  
+Chapter  1:  Scope  
+1.1:  Problem  Statement  
+In  today’s  modern  society,  public  establishments  are  flourishing  with  an  abundance  of  
+people
+ 
+using
+ 
+their
+ 
+resources.
+ 
+A
+ 
+commonality
+ 
+is
+ 
+that
+ 
+many
+ 
+of
+ 
+these
+ 
+places
+ 
+run
+ 
+out
+ 
+of
+ 
+seats
+ 
+to
+ 
+host
+ 
+all
+ 
+users.
+ 
+This
+ 
+is
+ 
+the
+ 
+problem
+ 
+we
+ 
+face.
+ 
+In
+ 
+2023,
+ 
+an
+ 
+average
+ 
+of
+ 
+1,649
+ 
+people
+ 
+visited
+ 
+the
+ 
+Carmel
+ 
+Library
+ 
+each
+ 
+day
+ 
+(CCPL
+ 
+Annual
+ 
+Report,
+ 
+2023).
+ 
+In
+ 
+further
+ 
+research,
+ 
+we
+ 
+conducted
+ 
+a
+ 
+poll
+ 
+by
+ 
+posting
+ 
+surveys
+ 
+around
+ 
+the
+ 
+school
+ 
+questioning
+ 
+students
+ 
+about
+ 
+their
+ 
+experience
+ 
+at
+ 
+the
+ 
+public
+ 
+library.
+ 
+After
+ 
+59
+ 
+responses,
+ 
+66%
+ 
+of
+ 
+people
+ 
+said
+ 
+that
+ 
+the
+ 
+library
+ 
+is
+ 
+always
+ 
+at
+ 
+least
+ 
+somewhat
+ 
+busy,
+ 
+with
+ 
+73%
+ 
+saying
+ 
+it's
+ 
+difficult
+ 
+to
+ 
+find
+ 
+adequate
+ 
+seating.
+ 
+Afterwards,
+ 
+we
+ 
+interviewed
+ 
+two
+ 
+Carmel
+ 
+Clay
+ 
+Public
+ 
+Library
+ 
+Workers.
+ 
+Many
+ 
+mentioned
+ 
+the
+ 
+same
+ 
+issues:“Especially
+ 
+in
+ 
+the
+ 
+mornings
+ 
+and
+ 
+between
+ 
+4-6
+ 
+pm
+ 
+afterschool,
+ 
+every
+ 
+seat
+ 
+is
+ 
+filled
+ 
+with
+ 
+students.
+ 
+I
+ 
+see
+ 
+many
+ 
+people
+ 
+walking
+ 
+around
+ 
+looking
+ 
+for
+ 
+study
+ 
+space”
+ 
+(CCPL
+  
+Adult
+ 
+Services
+ 
+Employee).
+ 
+In
+ 
+essence,
+ 
+the
+ 
+occupancy
+ 
+of
+ 
+the
+ 
+public
+ 
+library
+ 
+often
+ 
+poses
+ 
+a
+ 
+common
+ 
+problem
+ 
+for
+ 
+students
+ 
+looking
+ 
+for
+ 
+study
+ 
+space,
+ 
+causing
+ 
+many
+ 
+people
+ 
+to
+ 
+walk
+ 
+circles
+ 
+around
+ 
+the
+ 
+building
+ 
+in
+ 
+search
+ 
+of
+ 
+an
+ 
+empty
+ 
+seat.
+ 
+ 
+ 
+1.2:  Design  Statement  
+A  SYSTEM  that  collects  occupancy  data  and  displays  the  information  to  the  user  in  an  
+accessible
+ 
+manner.
+ 
+The
+ 
+SYSTEM
+ 
+should
+ 
+help
+ 
+individuals
+ 
+determine
+ 
+the
+ 
+best
+ 
+time
+ 
+to
+ 
+go
+ 
+to
+ 
+the
+ 
+library
+ 
+when
+ 
+chairs
+ 
+and/or
+ 
+tables
+ 
+are
+ 
+occupied.
+ 
+The
+ 
+SYSTEM
+ 
+should
+ 
+be
+ 
+discrete
+ 
+and
+ 
+should
+ 
+not
+ 
+interfere
+ 
+with
+ 
+library
+ 
+patrons’
+ 
+experience.
+ 
+ 
+ 
+ 
+
+OKAA  Solutions   4  
+1.3:  Application  
+The  design  specification  should  be  applied  as  a  standard  for  all  other  documents  to  
+reference.
+ 
+All
+ 
+dimensional,
+ 
+performance,
+ 
+and
+ 
+construction
+ 
+constraints
+ 
+should
+ 
+be
+ 
+listed
+ 
+in
+ 
+the
+ 
+specification.
+ 
+The
+ 
+specification
+ 
+should
+ 
+be
+ 
+applied
+ 
+in
+ 
+documents
+ 
+such
+ 
+as
+ 
+the
+ 
+test
+ 
+instruction,
+ 
+build
+ 
+and
+ 
+assembly
+ 
+instruction,
+ 
+and
+ 
+in
+ 
+deliverables
+ 
+such
+ 
+as
+ 
+the
+ 
+critical
+ 
+design
+ 
+review,
+ 
+by
+ 
+providing
+ 
+performance
+ 
+guidelines,
+ 
+dimension
+ 
+constraints,
+ 
+and
+ 
+a
+ 
+record
+ 
+of
+ 
+progress.
+ 
+The
+ 
+SYSTEM
+ 
+should
+ 
+be
+ 
+designed
+ 
+to
+ 
+assist
+ 
+patrons
+ 
+with
+ 
+locating
+ 
+open
+ 
+seating
+ 
+in
+ 
+a
+ 
+public
+ 
+space.
+ 
+Due
+ 
+to
+ 
+this
+ 
+criteria,
+ 
+the
+ 
+SYSTEM
+ 
+should
+ 
+be
+ 
+applied
+ 
+in
+ 
+a
+ 
+library
+ 
+setting.
+ 
+Its
+ 
+crowd
+ 
+control
+ 
+and
+ 
+open
+ 
+seating
+ 
+regulation
+ 
+capabilities
+ 
+lend
+ 
+themselves
+ 
+to
+ 
+use
+ 
+in
+ 
+an
+ 
+indoor,
+ 
+public
+ 
+setting
+ 
+with
+ 
+non
+ 
+assigned
+ 
+seating,
+ 
+such
+ 
+as
+ 
+a
+ 
+library.
+ 
+ 
+1.4:  Limitation  
+ The  SYSTEM  will  be  limited  by  the  budget  of  the  project,  the  schedule  and  limited  time  
+of
+ 
+the
+ 
+project,
+ 
+and
+ 
+the
+ 
+method
+ 
+with
+ 
+which
+ 
+it
+ 
+collects
+ 
+and
+ 
+processes
+ 
+data.
+ 
+The
+ 
+budget
+ 
+for
+ 
+the
+ 
+project
+ 
+is
+ 
+300
+ 
+dollars
+ 
+total,
+ 
+with
+ 
+a
+ 
+limitation
+ 
+of
+ 
+150
+ 
+dollars
+ 
+allocated
+ 
+for
+ 
+each
+ 
+semester.
+ 
+The
+ 
+project
+ 
+was
+ 
+limited
+ 
+to
+ 
+a
+ 
+time
+ 
+frame
+ 
+of
+ 
+the
+ 
+standard
+ 
+academic
+ 
+year
+ 
+of
+ 
+36
+ 
+weeks,
+ 
+with
+ 
+18
+ 
+weeks
+ 
+per
+ 
+semester.
+ 
+The
+ 
+Raspberry
+ 
+Pi
+ 
+camera
+ 
+should
+ 
+be
+ 
+limited
+ 
+by
+ 
+its
+ 
+range
+ 
+and
+ 
+focal
+ 
+length.
+ 
+Onboard
+ 
+local
+ 
+processing
+ 
+may
+ 
+produce
+ 
+excess
+ 
+heat.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+OKAA  Solutions   5  
+Chapter  2:  Applicable  Documents   
+2.1:  Government  Documents  
+2.1.1  40  CFR  761.20  Code  of  Federal  Regulations,  PART  761—Polychlorinated  Biphenyls  (PCBs)  
+Manufacturing,
+ 
+Processing,
+ 
+Distribution
+ 
+In
+ 
+Commerce,
+ 
+And
+ 
+Use
+ 
+Prohibitions.
+ 
+https://www.ecfr.gov/current/title-40/section-761.20 
+2.1.2  CDC  -  Safe  3D  Printing  
+https://blogs.cdc.gov/niosh-science-blog/2024/07/29/safe-3d-printing/ 
+2.2:  Specifications,  Standards,  and  Handbooks  
+2.2.1  ISO  18434-1:2008:  Condition  monitoring  and  diagnostics  of  machines  —  Thermography   
+https://www.iso.org/standard/41648.html  
+2.2.2  ISO  10878:2013:  Non-destructive  testing  —  Infrared  thermography  
+https://www.iso.org/standard/46265.html  
+2.3:  Other  government  documents,  drawings,  and  publications  
+2.3.1  National  Vulnerability  Database  CVE-2021-38759  Raspberry  Pi  Software  Weaknesses  and  
+Solutions
+ 
+https://nvd.nist.gov/vuln/detail/CVE-2021-38759 
+2.4:  Non-government  publications  
+2.4.1  Raspberry  Pi  Ltd  Raspberry  Pi  Camera  Module  3  NoIR  -  12MP  75  Degree  Infrared  Lens  
+Mechanical
+ 
+Drawing
+ 
+https://cdn-shop.adafruit.com/product-files/5659/camera-module-3-standard-mechanical-drawing.pdf 
+2.4.2  Raspberry  Pi  Ltd  Raspberry  Pi  5  FPC  Camera  Cable  -  22-pin  0.5mm  to  15-pin  1mm  -  200mm  long  
+Technical
+ 
+Details
+ 
+https://www.adafruit.com/product/5818#technical-details 
+2.4.3  Is  PETG  Food  Safe?  Inplex  Custom  Extruders   
+https://www.inplexllc.com/blog/is-petg-food-safe/#:~:text=As%20just%20discussed%20PETG%20materi
+al,food%20containers%20and%20beverage%20bottles 
+
+OKAA  Solutions   6  
+2.4.4  PETS  University  of  Maryland  Terrapin  Works  
+https://terrapinworks.umd.edu/materials/petg#:~:text=PETG%20is%20an%20industrial%2Dgrade,and%2
+0immune%20to%20UV%20light 
+2.4.5  What  Is  Infrared  Thermography?  NORIFT  
+https://www.reliableplant.com/infrared-thermography-315 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+OKAA  Solutions   7  
+Chapter  3:  Requirements  
+3.1:
+ 
+Form
+ 
+ 3.1.1   SYSTEM  HOUSING  should  be  printed  with  PETG  filament  
+ 3.1.2   SYSTEM  should  not  exceed  200  grams  
+3.1.3   SYSTEM  should  be  contained  in  a  3d  printed  HOUSING  97mm±3mm  x  
+67mm±3mm
+ 
+x
+ 
+59mm±3mm
+ 
+(Length
+ 
+x
+ 
+Width
+ 
+x
+ 
+Height)
+ 
+ 
+3.2:  Function  
+3.2.1  SYSTEM  should  detect  an  OCCUPANT  in  a  chair  from  15  ft  away  
+3.2.2   SYSTEM  should  detect  chair  data  upon  USER  request  with  a  maximum  latency  
+of
+ 
+10000
+ 
+ms.
+ 
+ 
+3.2.3  SYSTEM  should  be  able  to  detect  2  OCCUPANTS   with  an  accuracy  of  ±  1  
+3.2.4  SYSTEM  should  be  powered  via  wired  5.1V  5A  power.  
+ 
+3.3:  Fit  
+3.3.1   SYSTEM  should  be  mounted  semi-permanently  to  the  wall  via  self  tapping  
+screws.
+ 
+ 
+ 3.3.2  SYSTEM  should  remain  mounted  for  at  least  3  years.  
+ 
+ 
+ 
+
+OKAA  Solutions   8  
+Chapter  4:  Performance  
+4.1:  Qualification   
+4.1.1   The  SYSTEM  should  function  at  room  temperature  with  an  extended  range  
+(30-130
+ 
+°F),
+ 
+with
+ 
+low
+ 
+humidity
+ 
+(between
+ 
+0%
+ 
+and
+ 
+50%).
+ 
+4.1.2   The  SYSTEM  does  not  need  to  function  under  high  vibration  or  stress  conditions  
+4.1.3   The  SYSTEM  should  remain  mounted  stationary  to  a  wall  for  at  least  3  years.  
+4.2:  Reliability   
+ 4.2.1  SYSTEM  should  have  a  mean  time  between  failure  of  at  least  one  week.  
+4.3:  Safety  
+4.3.1  Camera  Module:  Low  power  camera  SYSTEMs  do  not  pose  a  health  risk  
+(Adafruit
+ 
+industries,
+ 
+2021).
+ 
+4.3.2  PETG  3D  Printer  Filament:  Fumes  are  non  toxic,  very  limited  off-gassing  
+(INPLEX
+ 
+LLC,
+ 
+2024).
+ 
+4.4:  Durability  
+4.4.1  The  SOFTWARE  should  be  able  to  receive  updates  for  the  entirety  of  the  
+lifespan
+ 
+of
+ 
+the
+ 
+SYSTEM.
+ 
+4.4.2  Camera  Module  Lifespan:  greater  than  three  years  [under  ideal  conditions]  
+(Adafruit  industries,  2021).  
+4.4.3   PETG  3D  Printer  Filament  Lifespan:  greater  than  three  years  [under  ideal  
+conditions]
+ 
+(Adafruit
+ 
+industries,
+ 
+2021).
+ 
+4.4.4   Raspberry  Pi  board  Lifespan:  greater  than  three  years  [under  ideal  conditions]  
+(Adafruit
+ 
+industries,
+ 
+2021)
+ 
+
+OKAA  Solutions   9  
+4.4.5   Raspberry  Pi  5  Active  Cooler  Lifespan:  greater  than  three  years  [under  ideal  
+conditions]
+ 
+(Adafruit
+ 
+industries,
+ 
+2021)
+ 
+4.5:  Testability  
+4.5.1   SOFTWARE:  Server  error  logging  should  be  comprehensive  with  NextJS  and  
+Python
+ 
+debugging
+ 
+tools.
+ 
+4.6:  Operability  
+4.6.1   The  WEBSITE  should  have  an  easily  navigable  user  interface.   
+4.6.2   The  SYSTEM  should  be  attached  semi-permanently  to  a  surface  and  will  not  be  
+handled
+ 
+by
+ 
+USERS.
+ 
+4.7:  Manufacturability  
+4.7.1   The  HOUSING  should  be  3D  printed  at  a  local  printing  location  with  well  
+stocked
+ 
+filament.
+ 
+4.7.2  The  processor  and  camera  should  be  connected  with  manufacturer  recommended  
+and
+ 
+unmodified
+ 
+wiring
+ 
+and
+ 
+mounting.
+ 
+4.8:  Maintainability  
+4.8.1  Updates  to  the  WEBSITE  and  Raspberry  Pi  should  take  place  instantaneously  
+given
+ 
+that
+ 
+they
+ 
+are
+ 
+both
+ 
+connected
+ 
+to
+ 
+WiFi.
+ 
+ 
+4.8.2  Maintenance  to  the  HARDWARE  should  be  achievable  by  removing  the  
+HOUSING
+ 
+and
+ 
+accessing
+ 
+the
+ 
+components.
+ 
+4.9:  Interchangeability  
+4.9.1  All  parts  are  available  from  multiple  online  vendors  and  they  use  the  same  
+interface
+ 
+with
+ 
+the
+ 
+Raspberry
+ 
+Pi.
+ 
+
+OKAA  Solutions   10  
+4.10:  Sustainability  
+4.10.1  The  SYSTEM  does  not  have  any  impact  on  the  environment  aside  from  its  
+energy
+ 
+use
+ 
+of
+ 
+less
+ 
+than
+ 
+2
+ 
+kilowatt-hours
+ 
+per
+ 
+month.
+ 
+4.11:  Aesthetics  
+4.11.1  The  HOUSING  should  have  filleted  edges  and  be  rectangular  in  shape.  
+4.11.2  The  WEBSITE  should  have  a  minimalist  design  containing  no  features  that  are  
+unnecessary
+ 
+to
+ 
+the
+ 
+functionality.
+ 
+4.12:  Storage  
+4.12.1  The  SYSTEM  should  be  stored  at  margins  slightly  extended  from  room  
+temperature
+ 
+(30-130
+ 
+°F)
+ 
+with
+ 
+humidity
+ 
+(0-50%).
+ 
+ 
+4.13:  Material  
+4.13.1  The  HOUSING  should  be  3D  printed  out  of  PETG  3D  printing  filament.  
+4.13.2  The  material  used  for  the  HOUSING  should  be  non-toxic,  UV  resistant,  and  
+waterproof.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+OKAA  Solutions   11  
+Chapter  5:  Verification  &  Validation  
+SYSTEM  -  The  completed  SYSTEM  of  the  HOUSING ,  motherboard,  and  camera.  
+OCCUPANT  -  Person  or  object  that  the  SYSTEM  should  detect.  
+HOUSING  -  3D  printed  enclosure  that  the  SYSTEM  should  be  installed  in.   
+SOFTWARE  -  OCCUPANT  detection  software  that  should  be  running  on  the  SYSTEM.  
+WEBSITE  -  Collection  of  linked  web  pages  that  share  a  unique  domain  name.  
+HARDWARE  -  Physical  components  of  the  SYSTEM ,  including  motherboard,  camera,  and  
+wiring.
+ 
+USER  -  An  individual  that  interacts  with  the  SYSTEM  and  SOFTWARE.  
+ 
+Paragraph  Requirement  Method  Representative  
+3.1.1  SYSTEM  HOUSING  should  
+be  printed  with  PETG  
+filament  
+Inspection  Ahmed  S.  
+3.1.2  SYSTEM  should  not  exceed  
+200  grams  
+Test   Olivia  H.  
+3.1.3  SYSTEM  should  be  
+contained  in  a  3d  printed  
+HOUSING  97mm±3mm  x  
+67mm±3mm  x  59mm±3mm  
+(Length  x  Width  x  Height)  
+Test   Ahmed  S.  
+
+OKAA  Solutions   12  
+3.2.1  SYSTEM  should  detect  an  
+OCCUPANT  in  a  chair  from  
+at  least  15  ft  away  
+Test    Kelly  F.  
+3.2.2  SYSTEM  should  detect  chair  
+data  upon  USER  request  with  
+a  maximum  latency  of  1  
+second.   
+Test   Ahmed  S.  
+3.2.3  SYSTEM  should  be  able  to  
+detect  at  least  10  
+OCCUPANTS   with  an  
+accuracy  of  ±  3  
+Test   Abram  W.  
+3.2.4  SYSTEM  should  be  powered  
+via  wired  5.1V  5A  power.  
+Inspection   Kelly  F.   
+3.3.1  SYSTEM  should  be  mounted  
+semi-permanently  to  the  wall  
+via  self  tapping  screws  
+Inspection   Olivia  H.  
+3.3.2  SYSTEM  should  remain  
+mounted  for  over  3  years  
+without  physical  maintenance.  
+Certification    Kelly  F.  
+
+OKAA  Solutions   13  
+4.1.1  The  SYSTEM  should  
+function  at  room  temperature  
+with  an  extended  range  
+(30–130  °F),  with  low  
+humidity  (between  0%  and  
+50%)  
+Test   Abram  W.  
+4.1.2  The  SYSTEM  does  not  need  
+to  function  under  high  
+vibration  or  stress  conditions.  
+Inspection   Ahmed  S.  
+4.1.3  The  SYSTEM  should  remain  
+mounted  stationary  to  a  wall  
+for  at  least  3  years.  
+Test   Olivia  H.  
+4.2.1  SYSTEM  should  have  a  
+mean  time  between  failure  of  
+at  least  one  week  
+Test   Ahmed  S.  
+4.3.1  Camera  Module:  Low  power  
+camera  SYSTEM s  do  not  
+pose  a  health  risk  (Adafruit  
+industries,  2021)  
+Inspection  Kelly  F.  
+4.3.2.  PETG  3D  Printer  Filament:  
+Fumes  are  non  toxic,  very  
+Inspection   Abram  W.  
+
+OKAA  Solutions   14  
+limited  off-gassing  (INPLEX  
+LLC,  2024)  
+4.4.1  The  SOFTWARE  should  be  
+able  to  receive  updates  for  the  
+entirety  of  the  lifespan  of  the  
+SYSTEM.  
+Inspection   Ahmed  S.  
+4.4.2  Camera  Module  Lifespan:  
+greater  than  three  (3)  years  
+[under  ideal  conditions]  
+(Adafruit  industries,  2021).  
+Certification   Kelly  F.  
+4.4.3  PETG  3D  Printer  Filament  
+Lifespan:  greater  than  three  
+years  [under  ideal  conditions]  
+(Adafruit  industries,  2021).  
+Certification   Abram  W.  
+4.4.4  Raspberry  Pi  5  Lifespan:  
+greater  than  three  years  [under  
+ideal  conditions]  (Adafruit  
+industries,  2021)  
+Certification   Ahmed  S.  
+4.4.5  Raspberry  Pi  5  Active  Cooler  
+Lifespan:  greater  than  three  
+Certification   Olivia  H.  
+
+OKAA  Solutions   15  
+years  [under  ideal  conditions]  
+(Adafruit  industries,  2021)  
+4.5.1  SOFTWARE :  Server  error  
+logging  should  be  
+comprehensive  with  NextJS  
+and  Python  debugging  tools.  
+Inspection   Kelly  F.  
+4.6.1  The  WEBSITE  should  have  
+an  easily  navigable  user  
+interface.  
+Inspection   Ahmed  S.  
+4.6.2  The  SYSTEM  should  be  
+attached  semi-permanently  to  
+a  surface  and  will  not  be  
+handled  by  USERS.  
+Inspection   Olivia  H.  
+4.7.1  The  HOUSING  should  be  3D  
+printed  at  a  local  printing  
+location  with  well  stocked  
+filament.  
+Certification   Kelly  F.  
+4.7.2  The  processor  and  camera  
+should  be  connected  with  
+manufacturer  recommended  
+Inspection   Abram  W.  
+
+OKAA  Solutions   16  
+and  unmodified  wiring  and  
+mounting.  
+4.8.1  Updates  to  the  WEBSITE  
+and  Raspberry  Pi  should  take  
+place  instantaneously  given  
+that  they  are  both  connected  
+to  WiFi.   
+Inspection   Ahmed  S.  
+4.8.2  Maintenance  to  the  
+HARDWARE  should  be  
+achievable  by  removing  the  
+HOUSING  and  accessing  the  
+components.  
+Demonstration   Olivia  H.  
+4.9.1  All  parts  are  available  from  
+multiple  online  vendors  and  
+they  use  the  same  interface  
+with  the  Raspberry  Pi.  
+Inspection   Abram  W.  
+4.10.1  SYSTEM  does  not  have  any  
+impact  on  the  environment  
+aside  from  its  energy  use  of  
+less  than  2  kilowatt-hours  per  
+month.  
+Test   Ahmed  S.  
+
+OKAA  Solutions   17  
+4.11.1  The  HOUSING  should  have  
+filleted  edges  and  be  
+rectangular  in  shape.  
+Inspection   Kelly  F.  
+4.11.2  The  WEBSITE  should  have  a  
+minimalist  design  containing  
+no  features  that  are  
+unnecessary  to  the  
+functionality.  
+Inspection   Abram  W.  
+4.12.1  The  SYSTEM  should  be  
+stored  at  margins  slightly  
+extended  from  room  
+temperature  (30-130  °F)  with  
+humidity  (0-50%).  
+Certification  Ahmed  S.  
+4.13.1  The  HOUSING  should  be  3D  
+printed  out  of  PETG  3D  
+printing  filament.  
+Certification   Kelly  F.  
+4.13.2  The  material  used  for  the  
+HOUSING  should  be  
+non-toxic,  UV  resistant,  and  
+waterproof.   
+Certification  Kelly  F.   
+ 
+
+OKAA  Solutions   18  
+Chapter  6:  Specification  Control  Drawing  
+ 
+ 
+ 
+
+
+OKAA  Solutions   19  
+Chapter  7:  References  
+40  CFR  761.20  --  Prohibitions  and  exceptions.  (n.d.).  eCFR  :.  
+https://www.ecfr.gov/current/title-40/section-761.20
+ 
+(n.d.).  cdn-shop.adafruit.com  
+https://cdn-shop.adafruit.com/product-files/5659/camera-module-3-standard-mechanical-
+drawing.pdf
+ 
+Cve-2021-38759.  (2024,  November  21).  NVD.  https://nvd.nist.gov/vuln/detail/CVE-2021-38759  
+Industries,  A.  (n.d.).  Raspberry  Pi  5  FPC  camera  cable  -  22-pin  0.5mm  to  15-pin  1mm.  Adafruit  
+Industries,
+ 
+Unique
+ 
+&
+ 
+fun
+ 
+DIY
+ 
+electronics
+ 
+and
+ 
+kits.
+ 
+https://www.adafruit.com/product/5818#technical-details
+ 
+Infrared  thermography  explained.  (2019,  July  2).  Reliable  Plant.  
+https://www.reliableplant.com/infrared-thermography-31572
+ 
+Is  PETG  food  safe?  Find  out  with  Inplex  custom  extruders,  LLC.  (2023,  January  25).  Inplex  
+Custom
+ 
+Extruders,
+ 
+LLC.
+ 
+https://www.inplexllc.com/blog/is-petg-food-safe/#:~:text=As%20just%20discussed%20
+PETG%20material,food%20containers%20and%20beverage%20bottles
+ 
+ISO  10878:2013.  (n.d.).  ISO.  https://www.iso.org/standard/46265.html  
+ISO  18434-1:2008.  (n.d.).  ISO.  https://www.iso.org/standard/41648.html  
+Petg.  (n.d.).  Terrapin  Works.  
+https://terrapinworks.umd.edu/materials/petg#:~:text=PETG%20is%20an%20industrial%
+2Dgrade,and%20immune%20to%20UV%20light
+ 
+ 
+
+OKAA  Solutions   20  
+Safe  3D  printing  is  for  everyone,  everywhere.  (2024,  November  25).  CDC  Blogs  |  Blogs  |  CDC.  
+https://blogs.cdc.gov/niosh-science-blog/2024/07/29/safe-3d-printing/
+ 
+ 
+ 
