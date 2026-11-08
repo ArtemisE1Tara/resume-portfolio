@@ -225,13 +225,6 @@ export default function Home() {
             </div>
             <p>University of Cincinnati</p>
           </li>
-          <li className="space-y-1">
-            <div className="flex justify-between items-start">
-              <span className="font-medium">HotSeat Project - Design Competition</span>
-              <span>April 2025</span>
-            </div>
-            <p>University of Cincinnati - Team of 5</p>
-          </li>
         </ul>
       </div>
 
